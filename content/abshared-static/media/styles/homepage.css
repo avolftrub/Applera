@@ -1,0 +1,642 @@
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Homepage Styles [homepage.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+03/29/2010
+
+Copyright (c) 2010 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+/* @group Global Styles */
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.homepage {
+	background-color: #fff;
+	color: #707070;
+	font: normal 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.homepage a:link,
+.homepage a:visited {
+	color: #004799;
+	text-decoration: none;
+}
+
+.homepage a:hover,
+.homepage a:active {
+	color: #004799;
+	text-decoration: underline;
+}
+
+.homepage b,
+.homepage strong {
+	font-weight: bold;
+}
+
+.homepage button {
+	cursor: pointer;
+}
+
+.homepage em,
+.homepage i {
+	font-style: italic;
+}
+
+.homepage h1 {
+	color: #036;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 22px;
+	/*margin-bottom: 10px;*/
+}
+
+.homepage h2 {
+	color: #d15c23;
+	font-family: "DIN Pro Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size: 24px;
+}
+
+.homepage h3,
+.homepage #search-again legend {
+	color: #d15c23;
+	font-family: "DIN Pro Light",Arial,Helvetica,sans-serif;
+	font-size: 18px;
+}
+
+.homepage h4 {
+	color: #d15c23;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.homepage h5 {
+	font-weight: 400;
+}
+
+.homepage input.checkbox,
+.homepage input.radio {
+	margin: 0;
+	padding: 0;
+}
+
+.homepage input.text,
+.homepage textarea {
+	border: 1px solid #7f9db9;
+	font-size: 11px;
+}
+
+.homepage input.text {
+	height: 16px;
+}
+
+.homepage label {
+	display: block;
+}
+
+.homepage strong {
+	font-weight: 700;
+}
+
+.homepage sup {
+	vertical-align: super;
+}
+
+.homepage sub {
+	vertical-align: sub;
+}
+
+.homepage textarea {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.homepage .clear {
+	clear: both;
+	width: 100%;
+}
+
+.homepage #container {
+	width: 980px;
+}
+
+.homepage #content {
+	background: none;
+	clear: both;
+	float: left;
+	margin-bottom: -80px;
+}
+
+.homepage .hidden {
+	height: 0 !important;
+	line-height: 0 !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	text-indent: -100000em !important;
+	width: 0 !important;
+}
+
+.homepage .jcarousel-container {
+	position: relative;
+}
+
+.homepage .jcarousel-clip {
+	z-index: 2;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.homepage .jcarousel-list {
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.homepage .jcarousel-list li,
+.homepage .jcarousel-item {
+	_display: inline;
+	float: left;
+	list-style: none;
+	width: 109px;
+	height: 75px;
+}
+
+.homepage .jcarousel-next {
+	z-index: 3;
+	display: none;
+}
+
+.homepage .jcarousel-prev {
+	z-index: 3;
+	display: none;
+}
+
+.homepage #primary-content {
+	background: url(../images/homepage/bg-primary-content.png) no-repeat;
+	height: 429px;
+	width: 970px;
+}
+
+.homepage #secondary-content {
+	position: relative;
+	top: -79px;
+}
+/* @end Global Styles */
+
+/* @group Product News & Offers */
+.homepage #news {
+	background: url(../images/homepage/bg-news.png) no-repeat;
+	color: #444;
+	font-size: 11px;
+	_height: 169px;
+	line-height: 17px;
+	margin-bottom: 20px;
+	min-height: 161px;
+	_position: relative;
+	width: 900px;
+	padding: 20px 30px 0 40px;
+	_z-index: 10000;
+}
+
+.homepage #news h2, .homepage #news h5 {
+	color: #004799;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 13px;
+	margin-left: -14px;
+}
+
+.homepage #news p {
+	margin-bottom: 9px;
+}
+
+.homepage #news .view-all {
+	background: url(../images/homepage/icon-strong-cta-arrow.png) no-repeat 0 70%;
+	margin-left: -4px;
+	padding-left: 16px;
+	padding-top: 3px;
+}
+/* @end Product News & Offers */
+
+/* @group Homepage Carousel */
+#homepage-carousel {
+	_display: inline;
+	float: left;
+	margin-left: 9px;
+	margin-top: 23px;
+	position: relative;
+	width: 679px;
+}
+
+#homepage-carousel .carousel-slide {
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+}
+
+#homepage-carousel .carousel-slide a {
+	height: 278px;
+	left: 8px;
+	position: absolute;
+	top: 7px;
+	width: 663px;
+	z-index: 1300;
+}
+
+#homepage-carousel .carousel-slide object,
+#homepage-carousel .carousel-slide .carousel-slide-content {
+	height: 277px;
+	margin-left: 9px;
+	width: 661px;
+}
+
+#homepage-carousel .carousel-slide object {
+	margin-top: 8px;
+}
+
+#homepage-carousel .carousel-slide .carousel-slide-content {
+	padding-top: 8px;
+}
+
+#homepage-carousel .carousel-slide .slide-frame {
+	background: url(../images/homepage/bg-slide-frame.png) no-repeat;
+	_background-image: url(../images/homepage/bg-slide-frame-ie6.png);
+	display: block;
+	height: 294px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 679px;
+	z-index: 1200;
+}
+
+#homepage-carousel ol {
+	background: url(../images/homepage/bg-homepage-carousel-nav.png) no-repeat;
+	_background-image: url(../images/homepage/bg-homepage-carousel-nav-ie6.png);
+	float: left;
+	height: 27px;
+	left: 9px;
+	padding-left: 28px;
+	padding-top: 1px;
+	position: absolute;
+	top: 257px;
+	width: 633px;
+	z-index: 1500;
+}
+
+#homepage-carousel ol li {
+	*display: inline;
+}
+
+#homepage-carousel ol li a {
+	background: url(../images/homepage/btn-homepage-carousel-nav.png) no-repeat;
+	_background: url(../images/homepage/btn-homepage-carousel-nav-ie6.png);
+	float: left;
+	height: 27px;
+	overflow: hidden;
+	text-indent: -10000em;
+	width: 27px;
+}
+
+#homepage-carousel ol li.slide-1 a {
+	background-position: -28px 0;
+}
+
+#homepage-carousel ol li.slide-1 a.selected {
+	background-position: -28px -27px;
+}
+
+#homepage-carousel ol li.slide-1 a:hover {
+	background-position: -28px -54px;
+}
+
+#homepage-carousel ol li.slide-2 a {
+	background-position: -55px 0;
+}
+
+#homepage-carousel ol li.slide-2 a.selected {
+	background-position: -55px -27px;
+}
+
+#homepage-carousel ol li.slide-2 a:hover {
+	background-position: -55px -54px;
+}
+
+#homepage-carousel ol li.slide-3 a {
+	background-position: -82px 0;
+}
+
+#homepage-carousel ol li.slide-3 a.selected {
+	background-position: -82px -27px;
+}
+
+#homepage-carousel ol li.slide-3 a:hover {
+	background-position: -82px -54px;
+}
+
+#homepage-carousel ol li.slide-4 a {
+	background-position: -109px 0;
+}
+
+#homepage-carousel ol li.slide-4 a.selected {
+	background-position: -109px -27px;
+}
+
+#homepage-carousel ol li.slide-4 a:hover {
+	background-position: -109px -54px;
+}
+
+#homepage-carousel ol li.slide-5 a {
+	background-position: -136px 0;
+}
+
+#homepage-carousel ol li.slide-5 a.selected {
+	background-position: -136px -27px;
+}
+
+#homepage-carousel ol li.slide-5 a:hover {
+	background-position: -136px -54px;
+}
+
+#homepage-carousel .next,
+#homepage-carousel .prev {
+	background: url(../images/homepage/btn-homepage-carousel-nav.png) no-repeat;
+	_background: url(../images/homepage/btn-homepage-carousel-nav-ie6.png);
+	display: block;
+	height: 27px;
+	position: absolute;
+	overflow: hidden;
+	text-indent: -10000em;
+	top: 258px;
+	z-index: 1750;
+}
+
+#homepage-carousel .next {
+	background-position: -163px 0;
+	left: 172px;
+	width: 29px;
+}
+
+#homepage-carousel .next:hover {
+	background-position: -163px -54px;
+}
+
+#homepage-carousel .prev {
+	background-position: 0 0;
+	left: 9px;
+	width: 28px;
+}
+
+#homepage-carousel .prev:hover {
+	background-position: 0px -54px;
+}
+
+#homepage-carousel #homepage-slide-text p {
+	color: #fff;
+	font-size: 12px;
+	left: 211px;
+	line-height: 16px;
+	position: absolute;
+	top: 263px;
+	vertical-align: middle;
+	z-index: 1800;
+}
+
+.browserSafari #homepage-carousel #homepage-slide-text p {
+	top: 264px;
+}
+
+#homepage-carousel #homepage-slide-text sub,
+#homepage-carousel #homepage-slide-text sup {
+	font-size: 90%;
+	position: relative;
+	vertical-align: middle;
+}
+
+#homepage-carousel #homepage-slide-text sub {
+	bottom: -2px;
+	*bottom: -4px;
+}
+
+#homepage-carousel #homepage-slide-text sup {
+	top: -6px;
+}
+/* @end Homepage Carousel */
+
+/* @group Solutions Carousel */
+.homepage #solutions {
+	background: no-repeat 0 0;
+	font-size: 11px;
+	line-height: 13px;
+	padding-top: 7px;
+}
+
+.homepage #solution-info {
+	background: url(../images/homepage/bg-solutions-item.png) no-repeat 0 -206px;
+	_background-image: url(../images/homepage/bg-solutions-item-ie6.png) !important;
+	color: #666;
+	font-size: 11px;
+	height: 102px;
+	left: 23px;
+	line-height: 16px;
+	padding: 30px 30px 55px;
+	_padding-bottom: 30px;
+	position: absolute;
+	top: 345px;
+	width: 864px;
+	z-index: 100000;
+}
+
+.homepage #solution-info .close {
+	background: url(../images/homepage/btn-close.png) no-repeat 100% 0;
+	_background: url(../images/homepage/btn-close-ie6.png) no-repeat 100% 0;
+	display: block;
+	height: 11px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	position: absolute;
+	right: 27px;
+	text-indent: -10000em;
+	top: 21px;
+	width: 44px;
+	_width: 50px;
+}
+
+.homepage #solution-info .solution-info-inner {
+	height: 120px;
+	overflow: hidden;
+	width: 864px;
+}
+
+.jcarousel-skin-solutions .jcarousel-container {
+	padding-top: 2px;
+	width: 912px;
+	margin: 0 34px -4px;
+}
+
+.jcarousel-skin-solutions .jcarousel-clip {
+	height: 103px;
+	width: 902px;
+}
+
+.jcarousel-skin-solutions li.jcarousel-item {
+	height: 103px;
+	text-align: center;
+	width: 150px;
+	_margin-right: -2px;
+}
+
+.jcarousel-skin-solutions li.jcarousel-item .solution-info-content {
+	display: none;
+}
+
+.jcarousel-skin-solutions li.jcarousel-item a {
+	background: url(../images/homepage/bg-solutions-item.png) no-repeat 0 0;
+	_background-image: url(../images/homepage/bg-solutions-item-ie6.png) !important;
+	display: block;
+	height: 94px;
+	width: 132px;
+	padding: 9px 10px 0;
+}
+
+.jcarousel-skin-solutions li.jcarousel-item a:hover {
+	cursor: pointer;
+}
+
+.jcarousel-skin-solutions li.jcarousel-item a.selected {
+	background-position: 0 -103px;
+}
+
+.jcarousel-skin-solutions li.jcarousel-item a img {
+	display: block;
+	margin-bottom: 9px;
+}
+
+.jcarousel-skin-solutions .jcarousel-item-placeholder {
+	background: #fff;
+	color: #000;
+}
+
+.jcarousel-skin-solutions .jcarousel-next {
+	background: url(../images/homepage/btn-carousel-arrows.png) no-repeat 0 -60px;
+	cursor: pointer;
+	height: 30px;
+	position: absolute;
+	right: -8px;
+	top: 19px;
+	width: 18px;
+}
+
+.jcarousel-skin-solutions .jcarousel-next:hover {
+	background-position: 0 -60px;
+}
+
+.jcarousel-skin-solutions .jcarousel-next:active {
+	background-position: 0 -60px;
+}
+
+.jcarousel-skin-solutions .jcarousel-next-disabled,.jcarousel-skin-solutions .jcarousel-next-disabled:hover,.jcarousel-skin-solutions .jcarousel-next-disabled:active {
+	background-position: 0 -90px;
+	cursor: default;
+}
+
+.jcarousel-skin-solutions .jcarousel-prev {
+	background: url(../images/homepage/btn-carousel-arrows.png) no-repeat 0 0;
+	cursor: pointer;
+	height: 30px;
+	left: -18px;
+	position: absolute;
+	top: 19px;
+	width: 18px;
+}
+
+.jcarousel-skin-solutions .jcarousel-prev:hover {
+	background-position: 0 0;
+}
+
+.jcarousel-skin-solutions .jcarousel-prev:active {
+	background-position: 0 0;
+}
+
+.jcarousel-skin-solutions .jcarousel-prev-disabled,.jcarousel-skin-solutions .jcarousel-prev-disabled:hover,.jcarousel-skin-solutions .jcarousel-prev-disabled:active {
+	background-position: 0 -30px;
+	cursor: default;
+}
+
+.homepage #solutions #solutions-content {
+	height: 137px;
+	width: 970px;
+}
+
+.homepage #solutions #solutions-content .view-all {
+	background: url(../images/homepage/icon-strong-cta-arrow.png) no-repeat 0 1px;
+	float: right;
+	line-height: 11px;
+	*line-height: normal;
+	margin-right: 17px;
+	margin-top: 5px;
+	padding-left: 16px;
+	vertical-align: middle;
+}
+
+.homepage #solutions h2, .homepage #solutions h4 {
+	font-size: 30px;
+	line-height: 30px;
+	margin-left: 45px;
+	position: relative;
+	top: -1px;
+}
+/* @end Solutions Carousel */
+
+/* @group Suggestions */
+.homepage #suggestions {
+	_display: inline;
+	float: right;
+	left: -10px;
+	position: relative;
+	width: 251px;
+}
+
+.homepage #suggestions #suggestions-content {
+	background: no-repeat;
+	height: 176px;
+	overflow: hidden;
+	width: 200px;
+	padding: 17px 17px 0 34px;
+}
+
+.homepage #suggestions #suggestions-content ul.suggestions {
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.homepage #suggestions #suggestions-content ul.suggestions li {
+	margin-bottom: 14px;
+}
+
+.homepage #suggestions h2, .homepage #suggestions h1 {
+	background-repeat: no-repeat;
+	height: 52px;
+	overflow: hidden;
+	text-indent: -10000em;
+	width: 251px;
+}
+
+.homepage #suggestions .special-offers {
+	margin-left: -9px;
+}
+/* @end Suggestions */

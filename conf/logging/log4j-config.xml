@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://logging.apache.org/log4j/">
+    <appender name="portal-appender" class="org.apache.log4j.RollingFileAppender">
+        <param name="Append" value="true"/>
+        <param name="File" value="logs/portal-all.log"/>
+        <param name="MaxFileSize" value="20000KB"/>
+        <param name="MaxBackupIndex" value="3"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{dd/MM/yy} %d{HH:mm:ss}] %x %-5p:%.15c:%t: %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="spring-appender" class="org.apache.log4j.RollingFileAppender">
+        <param name="Append" value="true"/>
+        <param name="File" value="logs/spring.log"/>
+        <param name="MaxFileSize" value="20000KB"/>
+        <param name="MaxBackupIndex" value="3"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{dd/MM/yy} %d{HH:mm:ss}] %-5p %c %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="hibernate-appender" class="org.apache.log4j.RollingFileAppender">
+        <param name="Append" value="true"/>
+        <param name="File" value="logs/hibernate.log"/>
+        <param name="MaxFileSize" value="20000KB"/>
+        <param name="MaxBackupIndex" value="3"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{dd/MM/yy} %d{HH:mm:ss}] %-5p %c %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="hibernate-rest" class="org.apache.log4j.RollingFileAppender">
+        <param name="Append" value="true"/>
+        <param name="File" value="logs/hibernate_rest.log"/>
+        <param name="MaxFileSize" value="20000KB"/>
+        <param name="MaxBackupIndex" value="3"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{dd/MM/yy} %d{HH:mm:ss}] %-5p %c %m%n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="system-exception-appender" class="org.apache.log4j.RollingFileAppender">
+        <param name="Append" value="true"/>
+        <param name="File" value="logs/system-errors.log"/>
+        <param name="MaxFileSize" value="20000KB"/>
+        <param name="MaxBackupIndex" value="3"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{dd/MM/yy} %d{HH:mm:ss}] %-5p %m%n"/>
+        </layout>
+    </appender>
+
+
+    <logger name="org.hibernate.type">
+        <appender-ref ref="hibernate-appender"/>
+        <level value="error"/>
+    </logger>
+
+    <logger name="org.hibernate.SQL">
+        <appender-ref ref="hibernate-appender"/>
+        <level value="error"/>
+    </logger>
+
+    <logger name="org.hibernate.persister">
+        <appender-ref ref="hibernate-rest"/>
+        <level value="error"/>
+    </logger>
+    
+    <logger name="com.appbio">
+        <appender-ref ref="portal-appender"/>
+        <level value="error"/>
+    </logger>
+
+    <logger name="org.springframework">
+        <appender-ref ref="spring-appender"/>
+        <level value="error" />
+    </logger>
+
+    <logger name="com.appbio.ui.controllers.ExceptionController">
+        <appender-ref ref="system-exception-appender"/>
+        <level value="error" />
+    </logger>
+
+</log4j:configuration>

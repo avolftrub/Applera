@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <description>
+        Database connection's services.
+    </description>
+
+    <bean class="org.springframework.orm.hibernate3.TypeDefinitionBean">
+        <property name="typeName" value="categoryBoolean"/>
+        <property name="typeClass" value="org.hibernate.type.YesNoType"/>
+    </bean>
+
+    <bean id="sessionFactory" class="com.appbio.services.HibernateSessionFactoryBean">
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+                <!--<prop key="hibernate.connection.url">jdbc:mysql://localhost/20071461_1</prop>-->
+                <prop key="hibernate.connection.url">jdbc:mysql://217.65.6.152/20071461_1</prop>
+                <!--<prop key="hibernate.connection.url">jdbc:mysql://localhost/appbio</prop>-->
+                <prop key="hibernate.connection.username">b20071461_1</prop>
+                <prop key="hibernate.connection.password">hR2mOX9u</prop>
+                <prop key="hibernate.connection.release_mode">auto</prop>
+<!--
+                <prop key="hibernate.connection.username">appbio</prop>
+                <prop key="hibernate.connection.password">sh1buya</prop>
+-->
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+                <prop key="hibernate.c3p0.min_size">5</prop>
+                <prop key="hibernate.c3p0.max_size">20</prop>
+                <prop key="hibernate.c3p0.timeout">300</prop>
+            </props>
+        </property>
+        <property name="persistentClasses">
+            <list>
+                <value>com.appbio.bo.ProductItem</value>
+                <value>com.appbio.bo.Application</value>
+                <value>com.appbio.bo.User</value>
+                <value>com.appbio.bo.Event</value>
+                <value>com.appbio.bo.WorkDay</value>
+                <value>com.appbio.bo.SessionItem</value>
+            </list>
+        </property>
+        <property name="typeDefinitions">
+            <list>
+                <bean class="org.springframework.orm.hibernate3.TypeDefinitionBean">
+                    <property name="typeName" value="localDate"/>
+                    <property name="typeClass" value="org.joda.time.contrib.hibernate.PersistentLocalDate"/>
+                </bean>
+
+                <bean class="org.springframework.orm.hibernate3.TypeDefinitionBean">
+                    <property name="typeName" value="dateTime"/>
+                    <property name="typeClass" value="org.joda.time.contrib.hibernate.PersistentDateTime"/>
+                </bean>
+            </list>
+        </property>
+<!--
+
+        <property name="mappingResources">
+            <list>
+                <value>ProductItem.hbm.xml</value>
+            </list>
+        </property>
+-->
+    </bean>
+
+    <!--Transaction status type-->
+
+    <bean id="portalTemplateBean" class="org.springframework.orm.hibernate3.HibernateTemplate">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory"/>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory"><ref local="sessionFactory"/></property>
+	</bean>
+
+    <bean id="statsTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate" scope="prototype">
+        <property name="sessionFactory" ref="statsSessionFactory"/>
+        <property name="checkWriteOperations" value="true"/>
+    </bean>
+
+    <bean id="sessionFilterBean" class="com.appbio.ui.session.UserSessionFilter">
+        <property name="sessionService" ref="sessionServiceBean"/>
+    </bean>
+
+    <bean id="sessionServiceBean" class="com.appbio.services.SessionService">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+    </bean>
+
+
+</beans>

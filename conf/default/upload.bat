@@ -1,0 +1,1 @@
+java -cp ../lib/hibernate3.jar;../lib/dom4j-1.6.1.jar;../lib/commons-logging.jar;../lib/commons-collections.jar;../lib/mysql-connector-java-5.0.7-bin.jar;../lib/cglib-2.1.3.jar;../lib/asm.jar;../lib/j2ee-1_4.jar; com.appbio.utils.DBLoader

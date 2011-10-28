@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<!--
+  - Application context definition for "springapp" DispatcherServlet.
+  -->
+
+<beans>
+    <bean id="forwardController" class="com.appbio.ui.controllers.ForwardController"/>
+
+    <bean id="loginController" class="com.appbio.ui.controllers.LoginController">
+        <property name="validator" ref="loginDataValidator"/>
+
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.User"/>
+        <property name="formView" value="loginForm"/>
+        <!--<property name="successView" value="mng_users.do"/>-->
+
+        <property name="userFinder" ref="userFinderService"/>
+        <property name="sessionService" ref="sessionServiceBean"/>
+    </bean>
+
+    <bean id="loginDataValidator" class="com.appbio.ui.validator.LoginValidator">
+        <property name="userFinder" ref="userFinderService"/>
+    </bean>
+
+    <bean id="logoutController" class="com.appbio.ui.controllers.LogOutController">
+    </bean>
+
+
+    <bean id="productCatalogController" class="com.appbio.ui.controllers.ProductCatalogController">
+        <property name="productFinder" ref="productFinderService"/>
+        <property name="applicationFinder" ref="applicationFinderService"/>
+    </bean>
+
+    <bean id="applicationCatalogController" class="com.appbio.ui.controllers.ApplicationCatalogController">
+        <property name="applicationFinder" ref="applicationFinderService"/>
+    </bean>
+
+    <bean id="printPreviewController" class="com.appbio.ui.controllers.PrintPreviewController">
+        <property name="productFinder" ref="productFinderService"/>
+    </bean>
+
+    <bean id="addProductsController" class="com.appbio.ui.controllers.AddProductController">
+        <property name="productFinder" ref="productFinderService"/>
+        <property name="entityService" ref="entityEditService"/>
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.ProductItem"/>
+        <property name="formView" value="addNewProductForm"/>
+        <property name="successView" value="UNDEFINED"/>
+        <property name="bindOnNewForm">
+            <value>false</value>
+        </property>
+    </bean>
+
+    <bean id="userManagementController" class="com.appbio.ui.controllers.UserManagementController">
+        <property name="userFinder" ref="userFinderService"/>
+        <property name="commandClass" value="com.appbio.bo.EditableEntity"/>
+        <property name="formView" value="manageUsers"/>
+        <property name="successView" value="UNDEFINED"/>
+    </bean>
+
+    <bean id="userModificationController" class="com.appbio.ui.controllers.UserModificationController">
+        <property name="validator">
+            <bean class="com.appbio.ui.validator.UserValidator">
+                <property name="userFinder" ref="userFinderService"/>
+            </bean>
+        </property>
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.User"/>
+        <property name="entityService" ref="entityEditService"/>
+        <property name="userFinder" ref="userFinderService"/>
+        <property name="formView" value="userEdit"/>
+        <property name="successView" value="mng_users.do"/>
+    </bean>
+
+    <bean id="deleteEntityController" class="com.appbio.ui.controllers.DeleteEntityController">
+        <property name="entityService" ref="entityEditService"/>
+    </bean>
+
+    <bean id="productFinderService" class="com.appbio.services.ProductFinder">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+    </bean>
+
+    <bean id="applicationFinderService" class="com.appbio.services.ApplicationFinder">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+    </bean>
+
+    <bean id="userFinderService" class="com.appbio.services.UserFinder">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+    </bean>
+
+    <bean id="entityEditService" class="com.appbio.services.EntityService">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+    </bean>
+
+
+   <!--                  Events Controllers              -->
+
+    <bean id="eventsCatalogController" class="com.appbio.ui.controllers.event.EventsCatalogController">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+    </bean>
+
+    <bean id="eventsModificationController" class="com.appbio.ui.controllers.event.EventModificationController">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+        <property name="validator">
+            <bean class="com.appbio.ui.validator.EventValidator"/>
+        </property>
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.Event"/>
+        <property name="entityService" ref="entityEditService"/>
+        <property name="formView" value="eventEdit"/>
+        <property name="successView" value="events.do"/>
+
+    </bean>
+
+    <bean id="workDaysController" class="com.appbio.ui.controllers.event.WorkDaysModificationController">
+        <property name="entityService" ref="entityEditService"/>
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.Event"/>
+        <property name="formView" value="eventEdit"/>
+        <property name="successView" value="eventEdit"/>
+    </bean>
+
+    <bean id="eventSunscriberController" class="com.appbio.ui.controllers.event.EventSubscriberController">
+        <property name="portalTemplate" ref="portalTemplateBean"/>
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.Message"/>
+        <property name="formView" value="eventRegister"/>
+        <property name="successView" value="eventSubscribeOk"/>
+        <property name="validator">
+            <bean class="com.appbio.ui.validator.MessageValidator"/>
+        </property>
+    </bean>
+
+    <!-- ************************************************************************************************* -->
+
+    <bean id="response404" class="com.appbio.ui.controllers.PageNotFoundController"/>
+    <bean id="exceptionController" class="com.appbio.ui.controllers.ExceptionController"/>
+    <bean id="passwordRemiderController" class="com.appbio.ui.controllers.common.PasswordReminderController">
+        <property name="commandName" value="command"/>
+        <property name="commandClass" value="com.appbio.bo.User"/>
+        <property name="formView" value="forgetPassword"/>
+        <property name="successView" value="passwordChanged"/>
+        <property name="entityService" ref="entityEditService"/>
+        <property name="userFinder" ref="userFinderService"/>        
+        <property name="validator">
+            <bean class="com.appbio.ui.validator.EmailValidator">
+                <property name="userFinder" ref="userFinderService"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--todo remove during cleanup. It is a test-->
+    <bean id="indexPageContrl" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+        <property name="viewName" value="index"/>
+    </bean>
+
+
+    <bean id="standardViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="2"/>
+        <property name="prefix">
+            <value>/jsp/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+
+    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="1"/>
+        <property name="viewClass">
+            <value>org.springframework.web.servlet.view.tiles.TilesView</value>
+        </property>
+    </bean>
+
+
+    <bean id="urlFileNameController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
+
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="order" value="10"/>
+        <property name="mappings">
+            <props>
+                <prop key="index.do">forwardController</prop>
+                <prop key="index1.do">forwardController</prop>
+                <prop key="new_index.do">forwardController</prop>
+                <prop key="support.do">forwardController</prop>
+                <prop key="new_support.do">forwardController</prop>
+                <prop key="about.do">forwardController</prop>
+                <prop key="new_about.do">forwardController</prop>
+                <prop key="contact.do">forwardController</prop>
+                <prop key="new_contact.do">forwardController</prop>
+                <prop key="corp_structure.do">forwardController</prop>
+                <prop key="new_corp_structure.do">forwardController</prop>
+                <prop key="products.do">productCatalogController</prop>
+                <prop key="new_products.do">productCatalogController</prop>
+                <prop key="apptech.do">forwardController</prop>
+                <prop key="printPreview.do">printPreviewController</prop>
+                <prop key="applications.do">applicationCatalogController</prop>
+                <prop key="new_applications.do">applicationCatalogController</prop>
+                <prop key="addProduct.do">addProductsController</prop>
+                <prop key="deleteProduct.do">deleteEntityController</prop>
+                <prop key="login.do">loginController</prop>
+                <prop key="logout.do">logoutController</prop>
+                <prop key="administration.do">forwardController</prop>
+                <prop key="mng_users.do">userManagementController</prop>
+                <prop key="mng_applications.do">forwardController</prop>
+                <prop key="mng_lib.do">forwardController</prop>
+                <prop key="editUser.do">userModificationController</prop>
+                <prop key="deleteUser.do">deleteEntityController</prop>
+                <prop key="events.do">eventsCatalogController</prop>
+                <prop key="new_events.do">eventsCatalogController</prop>
+                <prop key="eventEdit.do">eventsModificationController</prop>
+                <prop key="eventDelete.do">deleteEntityController</prop>
+                <prop key="eventRegister.do">eventSunscriberController</prop>
+                <prop key="periodChanged.do">workDaysController</prop>
+                <prop key="pageNotFound.do">response404</prop>
+                <prop key="errorPage.do">exceptionController</prop>
+                <prop key="forgetpassword.do">passwordRemiderController</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/tiles-defs-spring.xml</value>
+            </list>
+        </property>
+        <property name="validateDefinitions" value="false"/>
+    </bean>
+
+<!--
+    <bean id="ctrlClassMapping" class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+        <property name="order" value="1"/>
+    </bean>
+-->
+<!--
+
+
+
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles.TilesConfigurer">
+        <property name="factoryClass" value="org.apache.struts.tiles.xmlDefinition.I18nFactorySet"/>
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/tiles-defs-spring.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="requestContextAttribute" value="requestContext"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles.TilesView"/>
+        -->
+<!--todo try with tiles jstl-->
+<!--
+        -->
+<!--<property name="viewClass" value="org.springframework.web.servlet.view.tiles.TilesJstlView"/>-->
+<!--
+    </bean>
+
+-->
+</beans>

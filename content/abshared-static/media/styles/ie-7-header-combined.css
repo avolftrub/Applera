@@ -1,0 +1,78 @@
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Header
+IE 7 Styles [header-ie7.css]
+
+David Munger [david.munger@acquitygroup.com]
+11/27/2009
+
+Copyright (c) 2009 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#headWrapper #header {
+	position: relative;
+	z-index: 4000;
+}
+
+#global-nav {
+	position: relative;
+	z-index: 5000;
+}
+
+#global-search {
+	z-index: 7000;
+}
+
+#my-account {
+	line-height: normal;
+	z-index: 7000;
+}
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Footer
+
+IE7 Styles [footer-ie7.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+03/15/2010
+
+Copyright (c) 2010 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#footer {
+	padding-top: 14px;
+}
+
+#footer #footer-wrapper {
+	background-image: url(../images/footer/bg-footer-wrapper-ie7.png);
+}
+
+#footer .hr {
+	margin-bottom: 2px;
+	padding-top: 28px;
+}
+
+#footer #legal-info ul li {
+	background-position: 0 2px;
+	margin-left: 5px;
+}
+
+#footer #life-technologies #follow-us {
+	margin-bottom: 6px;
+}
+
+#footer .see-more {
+	background-position: 100% 3px;
+}
+
+.modal a.jqmClose {
+	margin-right: 0;
+}

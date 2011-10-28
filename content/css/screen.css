@@ -1,0 +1,130 @@
+/* Applied Biosystems CSS */
+
+/* general */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 100%
+}
+
+a img {
+	border: 0;
+}
+
+p {
+	font-size: .63em;
+	padding: 0;
+	margin: 1em 0 1em 0;
+}
+
+.popupHeaderWrapper {
+	line-height: 0;
+	border-bottom: 6px solid #728BAB;
+}
+
+.column660 {
+float: left;
+width: 667px;
+margin-right: 20px;
+}
+
+.column668 {
+	width: 668px;
+}
+
+
+.contentPrintCart {
+        margin: 5px;
+   }
+
+#noTabContentWrapper {
+	margin: 0 0 0 17px;
+	background: url(../images/tab_content_wrapper_background.gif);
+	background-position: 1px 0;
+	background-repeat: repeat-y;
+}
+
+#noTabContentMiddle {
+	float: left;
+	width: 607px;
+}
+
+h2.title {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #036;
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: .48em 0px .48em 0px;
+	margin: 0;
+}
+
+p.noTabHeaderText {
+	font-size: .63em;
+	padding: 0 60px 0 0;
+	margin: .3em 0 1em 0;
+}
+
+#contentListWrapper {
+	float: left;
+	width: 250px;
+}
+
+ul.contentList {
+	margin: 0;
+	padding: 0;
+	font-size: .69em;
+	line-height: 1.33em;
+	font-weight: bold;
+}
+
+ul.contentList li {
+	list-style: none;
+	background-image: url(../images/bulletOrange_lg.gif);
+	background-position: 0 .9em;
+	background-repeat: no-repeat;
+	padding: .4em 0 2px .9em;
+	margin: 0 0 0 0;
+}
+
+.contentSubList {
+	font-size: .63em;
+	margin: 2px 10px 15px 10px;
+}
+
+.contentSubList ul {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.contentSubList li {
+	list-style: none;
+	background-image: url(../images/bulletGrey.gif);
+	background-position: 0 .4em;
+	background-repeat: no-repeat;
+	padding: 0 0 1px 9px;
+	margin: 0 0 0 0;
+}
+
+#listSpacer {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+
+.floatLeft {
+	float: left;
+}
+
+.hRule {
+	height: 1px;
+	width: 100%;
+	background-color: #DADADA;
+	overflow: hidden;
+}
+

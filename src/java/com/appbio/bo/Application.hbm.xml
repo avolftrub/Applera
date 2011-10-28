@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.appbio.bo">
+
+    <class name="Application" table="applications" mutable="true">
+        <id name="id" column="ID" type="integer">
+            <generator class="increment"/>
+        </id>
+
+        <property name="parentId" column="PARENT_ID" type="integer"/>
+        <property name="name" column="NAME" type="string"/>
+        <property name="group" column="IS_GROUP" type="org.hibernate.type.YesNoType"/>
+        <property name="order" column="ORDER_NUM" type="integer"/>
+        <property name="description" column="DESCRIPTION" type="string"/>
+        <property name="pageLink" column="PAGE_LINK" type="string"/>
+        <property name="note" column="NOTE" type="string"/>
+    </class>
+
+</hibernate-mapping>

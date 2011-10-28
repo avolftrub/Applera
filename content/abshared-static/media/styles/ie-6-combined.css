@@ -1,0 +1,474 @@
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Header
+IE 6 Styles [header-ie6.css]
+
+Joe Morrow [lee.allen@acquitygroup.com]
+12/02/2009
+
+Copyright (c) 2009 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#global-nav #primary-nav li#nav-home a {
+	background-image: url(../images/header/global-nav/primary-nav/home-ie6.png);
+}
+
+#global-nav #primary-nav li#nav-products .drop-down,
+#global-nav #primary-nav li#nav-products a {
+	background-image: url(../images/header/global-nav/primary-nav/products-ie6.png);
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down,
+#global-nav #primary-nav li#nav-applications-and-technologies a {
+	background-image: url(../images/header/global-nav/primary-nav/applications-and-technologies-ie6.png);
+}
+
+#global-nav #primary-nav li#nav-services .drop-down,
+#global-nav #primary-nav li#nav-services a {
+	background-image: url(../images/header/global-nav/primary-nav/services-ie6.png);
+}
+
+#global-nav #primary-nav li#nav-support .drop-down,
+#global-nav #primary-nav li#nav-support a {
+	background-image: url(../images/header/global-nav/primary-nav/support-ie6.png);
+}
+
+#global-nav #primary-nav li#nav-learning-and-events .drop-down,
+#global-nav #primary-nav li#nav-learning-and-events a {
+	background-image: url(../images/header/global-nav/primary-nav/learning-and-events-ie6.png);
+}
+
+#global-nav #secondary-nav li#my-baskets-orders,
+#global-nav #secondary-nav li#my-baskets-orders:hover,
+#global-nav #secondary-nav li#my-baskets-orders.over,
+#global-nav #secondary-nav li#my-baskets-orders .drop-down,
+#global-nav #secondary-nav li#my-baskets-orders .drop-down-top {
+	background-image: url(../images/header/global-nav/secondary-nav/my-baskets-orders-ie6.png) !important;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders {
+	padding-right: 15px;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders a.icon {
+	background-image: url(../images/header/icon-shopping-cart-ie6.png);
+}
+
+#global-nav #secondary-nav li#my-baskets-orders a.icon span {
+	background-image: url(../images/header/icon-my-baskets-orders-ie6.png);
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category .drop-down {
+	background-image: url(../images/header/bg-select-category-ie6.png);
+}
+
+#my-account li.my-account span,
+#my-account li.my-account .my-account-top,
+#my-account li.my-account ul {
+	background-image: url(../images/header/bg-my-account-ie6.png);
+}
+
+ #headWrapper #my-account ul li.my-account a.primary {
+ 	background-image: url(../images/header/icon-my-account-ie6.png);
+}
+
+#my-account li.quick-order a {
+	background-image: url(../images/header/icon-quick-order-ie6.png);
+}
+
+#global-search button {
+	background-image: url(../images/header/btn-global-search-submit-ie6.png);
+}
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Footer
+
+IE6 Styles [footer-ie6.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+03/24/2010
+
+Copyright (c) 2010 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#footer #footer-wrapper {
+	background-image: url(../images/footer/bg-footer-wrapper-ie6.png);
+}
+
+#footer .hr {
+	padding-top: 27px;
+}
+
+#footer #life-technologies {
+	width: 204px;
+}
+
+#footer #life-technologies #follow-us {
+	margin-bottom: 4px;
+}
+
+#footer #life-technologies #follow-us h5 {
+	margin-bottom: 4px;
+}
+
+#footer #life-technologies #follow-us ul {
+	display: inline;
+}
+
+#footer .see-more {
+	background-position: 100% 50%;
+	padding-right: 14px;
+}
+
+ #footer #site-feedback {
+ 	padding-right: 5px;
+}
+
+#footer .see-more {
+	background-image: url(../images/footer/icon-see-more-ie6.png);
+}
+
+/* @group Modal Background */
+.modal .content,
+.modal .t,
+.modal .b,
+.modal .b div {
+	background-image: url(../images/backgrounds/modalBackground.gif);
+}
+
+.modalClose .content,
+.modalClose .t,
+.modalClose .b,
+.modalClose .b div {
+	background-image: url(../images/backgrounds/modalBackground-blueBar.gif);
+}
+/* @end */
+
+/* @group jqModal */
+iframe.jqm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: expression( this.parentNode.offsetWidth + 'px');
+	height: expression( this.parentNode.offsetHeight + 'px');
+}
+
+.jqmWindow {
+    position: absolute;
+    top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+/* @end jqModal */
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+IE 6 Styles [global.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+10/27/2009
+
+Copyright (c) 2009 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#content {
+	z-index: 5;
+}
+
+/* @group Modal Background */
+.modal .content,
+.modal .t,
+.modal .b,
+.modal .b div {
+	background-image: url(../images/backgrounds/modalBackground.gif);
+}
+
+.modalClose .content,
+.modalClose .t,
+.modalClose .b,
+.modalClose .b div {
+	background-image: url(../images/backgrounds/modalBackground-blueBar.gif);
+}
+/* @end */
+
+/* @group Primary Nav */
+.navIFrame {
+	z-index: -1;
+	left: 0;
+	top: 0;
+	position: absolute;
+	filter: alpha(opacity=0);
+}
+/* @end Primary Nav */
+
+/* @group jqModal */
+iframe.jqm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: expression( this.parentNode.offsetWidth + 'px');
+	height: expression( this.parentNode.offsetHeight + 'px');
+}
+
+.jqmWindow {
+    position: absolute;
+    top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+/* @end jqModal */
+
+/* @group Page Tools */
+#page-tools ul li.e-mail a.icon {
+	background: url(../images/icons/letter.png) no-repeat 0 0;
+	display: block;
+	height: 7px;
+	margin: 12px 0 11px;
+	overflow: hidden;
+	text-indent: -10000em;
+	width: 11px;
+}
+
+#page-tools ul li.e-mail,
+#page-tools ul li.open,
+#page-tools ul li.e-mail .drop-down-top,
+#page-tools ul li.e-mail .drop-down {
+	background-image: url(../images/backgrounds/page-tools/e-mail-ie6.png) !important;
+}
+
+#page-tools ul li.e-mail .drop-down-top {
+	margin-right: -1px;
+	right: 0;
+	width: 212px;
+}
+
+#page-tools ul li.e-mail .drop-down {
+	margin-right: -2px;
+	right: 0;
+}
+/* @end Page Tools */
+
+/* @group main-content sidebar */
+#main-content,
+#sidebar {
+    overflow: hidden;
+}
+/* @end sidebar */
+
+/* @group search results */
+.G-H #intro {
+    margin-top: 0;
+}
+
+.G-H #main-content ul {
+    margin-left: 20px;
+}
+/* @end Search results */
+
+/* @group Tabs */
+.tabs {
+	/*background: transparent url(../images/backgrounds/tabs/tabs-content.png) no-repeat top left;*/
+	display: inline;
+}
+
+.tabs .tabs-nav li.tabs-selected {
+	background: transparent url(../images/backgrounds/tabs/tabs-selected.gif) no-repeat bottom left;
+}
+
+.tabs .tabs-nav .tabs-selected a:link,
+.tabs .tabs-nav .tabs-selected a:visited,
+.tabs .tabs-nav .tabs-selected a:hover,
+.tabs .tabs-nav .tabs-selected a:active {
+	background: transparent url(../images/backgrounds/tabs/tabs-selected.gif) no-repeat top right;
+}
+
+.tabs .tabs-nav li {
+	background: transparent url(../images/backgrounds/tabs/tabs-inactive.gif) no-repeat bottom left;
+}
+
+.tabs .tabs-nav a:link,
+.tabs .tabs-nav a:visited {
+	background: transparent url(../images/backgrounds/tabs/tabs-inactive.gif) no-repeat top right;
+}
+
+.tabs .tabs-nav a:hover,
+.tabs .tabs-nav a:active {
+	background: transparent url(../images/backgrounds/tabs/tabs-inactive.gif) no-repeat top right;
+}
+
+.tabs .tabs-content {
+	background-color: transparent !important;
+	background-position: 0 -30px !important;
+	position: relative;
+	top: -1px;
+}
+
+.tabs .tabs-selected {
+	background: url(../images/backgrounds/tabs/tabs-content.gif) no-repeat left top;
+	padding-top: 16px;
+}
+
+#tab-workflow .add-to-favorites a.trigger {
+    margin-left: 10px;
+}
+
+.tabs .tabs-nav li.first {
+	background-position: left -65px;
+}
+
+.tabs .tabs-content .documents li.link-pdf {
+    position: relative;
+    background-position-y: -94px;
+}
+
+#tab-video .video-list {
+	display: inline;
+}
+
+/* @group Tabs Content */
+#tab-workflow dl {
+	display: inline;
+	background: transparent;
+}
+
+#tab-workflow .notice,
+#tab-workflow .loading,
+#tab-workflow .confirmation,
+#tab-workflow .confirmation p {
+	float: left;
+}
+
+.workflow-step {
+	position: relative;
+	z-index: 2;
+}
+/* @end Tabs Content */
+/* @end Tabs */
+
+/* @group Carousel */
+#carousel ol.comps li a {
+    background: url(../images/buttons/carousel-nav-ie6.png) no-repeat;  
+}
+/* @end Carousel */
+
+/* @group Services */
+.services-3-column {  
+    margin-left: 10px;    
+}
+
+.services-3-column .business-2-business ul.comps {
+    padding-left: 5px;
+}
+
+.services-3-column .business-2-business ul.no-bullet.comps {
+    padding-left: 0;
+}
+
+.services-3-column .learn-more a {
+    position: relative;
+}
+/* @end Services */
+
+/* @group Result Set */
+.result-set .result-label span, .result-set .result-label span a {
+    color: #D15C23;
+}
+/* @end Result Set */
+
+/* @group Support Nav */
+#support-nav .support-nav-active,
+#support-nav .support-nav-active a {  
+   zoom: 1;
+}
+/* @end Support Nav */
+
+/* @group Support */
+#support div.column-2 {
+	margin-right: 0;
+}
+
+#support .column-2 button {
+	position: relative;
+	left: 13px;
+}
+/* @end Support */
+
+/* @group Event Widget */ 
+#event-widget p { 
+	background-position-y: 2px;     
+	line-height: 12px; 
+} 
+/* @end Event Widget */ 
+
+/* @group left-column */
+.left-column .common-2-column {
+    margin-left: -2px;
+}
+
+.left-column #intro,
+.left-column #hero {
+    margin-left: -3px;
+}
+/* @end left-column */
+
+.homepage #solution-info,
+.jcarousel-skin-solutions li.jcarousel-item a {
+	background-image: url(../images/backgrounds/solutions-item-ie6.png);
+}
+
+.homepage #carousel .carousel-slide .slide-crop {
+	background-image: url(../images/backgrounds/slide-crop-ie6.png);
+}
+
+.homepage #news {
+	height: 169px;
+}
+
+.homepage #carousel .carousel-slide .slide-info {
+	right: -320px;
+}
+
+/* @group Media List Horizontal */
+.media-list-horz {   
+    height: 62px;    
+}
+/* @end Media List Horizontal */
+
+.homepage #solution-info .close {
+	background-image: url(../images/buttons/close-ie6.png);
+	margin-bottom: 0;
+	padding-bottom: 8px;
+}
+
+.common-2-column { 
+    display: inline;
+}
+
+.homepage #news {
+	position: relative;
+	z-index: 10000;
+}
+
+#tab-workflow .drop-down-content {
+	position: relative;
+}
+
+.tabs .tabs-content .documents li.link-word,
+.tabs .tabs-content .documents li.link-pdf,
+.tabs .tabs-content .documents li.link-web,
+.tabs .tabs-content .documents li.link-excel {
+	zoom: 1;
+ }
+
+#page-tools ol {
+	margin-left: 10px;
+}

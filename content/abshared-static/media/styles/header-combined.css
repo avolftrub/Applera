@@ -1,0 +1,1148 @@
+#headWrapper div, #headWrapper span, #headWrapper applet, #headWrapper object, #headWrapper iframe, #headWrapper h1, #headWrapper h2, #headWrapper h3, #headWrapper h4, #headWrapper h5, #headWrapper h6, #headWrapper p, #headWrapper blockquote, #headWrapper pre, #headWrapper a, #headWrapper abbr, #headWrapper acronym, #headWrapper address, #headWrapper big, #headWrapper cite, #headWrapper code, #headWrapper del, #headWrapper dfn, #headWrapper em, #headWrapper font, #headWrapper img, #headWrapper ins, #headWrapper kbd, #headWrapper q, #headWrapper s, #headWrapper samp, #headWrapper small, #headWrapper strike, #headWrapper strong, #headWrapper sub, #headWrapper sup, #headWrapper tt, #headWrapper var, #headWrapper dl, #headWrapper dt, #headWrapper dd, #headWrapper ol, #headWrapper ul, #headWrapper li, #headWrapper fieldset, #headWrapper form, #headWrapper label, #headWrapper legend, #headWrapper table, #headWrapper caption, #headWrapper tbody, #headWrapper tfoot, #headWrapper thead, #headWrapper tr, #headWrapper th, #headWrapper td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+#headWrapper :focus {
+    outline: 0;
+}
+
+#headWrapper ol, #headWrapper ul, {
+    list-style: none;
+}
+
+#headWrapper table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#headWrapper caption, #headWrapper th, #headWrapper td {
+    text-align: left;
+    font-weight: normal;
+}
+
+#headWrapper blockquote:before, #headWrapper blockquote:after, #headWrapper q:before, #headWrapper q:after {
+    content: "";
+}
+
+#headWrapper blockquote, #headWrapper q {
+    quotes: "" "";
+}
+
+#headWrapper ul {
+    list-style-type: none;
+}
+
+#footer div, #footer span, #footer applet, #footer object, #footer iframe, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer p, #footer blockquote, #footer pre, #footer a, #footer abbr, #footer acronym, #footer address, #footer big, #footer cite, #footer code, #footer del, #footer dfn, #footer em, #footer font, #footer img, #footer ins, #footer kbd, #footer q, #footer s, #footer samp, #footer small, #footer strike, #footer strong, #footer sub, #footer sup, #footer tt, #footer var, #footer dl, #footer dt, #footer dd, #footer ol, #footer ul, #footer li, #footer fieldset, #footer form, #footer label, #footer legend, #footer table, #footer caption, #footer tbody, #footer tfoot, #footer thead, #footer tr, #footer th, #footer td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+#footer :focus {
+    outline: 0;
+}
+
+#footer ol, #footer ul, {
+    list-style: none;
+}
+
+#footer table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#footer caption, #footer th, #footer td {
+    text-align: left;
+    font-weight: normal;
+}
+
+#footer blockquote:before, #footer blockquote:after, #footer q:before, #footer q:after {
+    content: "";
+}
+
+#footer blockquote, #footer q {
+    quotes: "" "";
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Header
+Global Styles [header.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+11/27/2009
+
+Copyright (c) 2009 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+.hidden {
+	height: 0 !important;
+	line-height: 0 !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	text-indent: -100000em !important;
+	width: 0 !important;
+}
+
+body {
+color:#666666;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:11px;
+margin:0;
+padding:0;
+}
+
+#headWrapper a:link,
+#headWrapper a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#headWrapper a:hover,
+#headWrapper a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#headWrapper h5 {
+	font-weight: normal;
+}
+
+#headWrapper strong {
+	font-weight: bold;
+}
+
+#headWrapper .anonymous-header,
+#headWrapper .logged-in-header,
+#headWrapper .expired-login-header {
+	margin-right: 5px;
+}
+
+#headWrapper {
+	background-color: #fff;
+	color: #707070;
+	font: normal 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	position: relative;
+	width: 970px;
+	z-index: 2000;
+}
+
+/* @group Header */
+#headWrapper #header {
+	background: #fff url(../images/header/bg-header.png) repeat-x;
+	color: #ababab;
+	font-size: 10px;
+	height: 95px;
+	line-height: 14px;
+	position: relative;
+	width: 970px;
+}
+
+#headWrapper #header h2 a {
+
+
+
+    background: url(../images/header/logo-applied-biosystems1.png) no-repeat;
+    display: block;
+    height: 70px;
+    left: 15px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -10000em;
+    top: 15px;
+    width: 297px;
+
+
+/*	background: url(../images/header/logo-applied-biosystems.png) no-repeat;
+	display: block;
+	height: 64px;
+	left: 15px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -10000em;
+	top: 16px;
+	width: 163px;
+*/
+}
+
+
+/* @group Global Search */
+#headWrapper #global-search {
+/*
+	background-color: transparent;
+	color: #ababab;
+	font-size: 10px;
+	height: 35px;
+	left: 226px;
+*/
+        left: 419px;
+	line-height: 14px;
+	position: absolute;
+	top: 54px;
+	width: 551px;
+
+
+}
+
+#global-search button {
+	background: url(../images/header/btn-global-search-submit.png) no-repeat;
+	border: none;
+	cursor: hand;
+	cursor: pointer;
+	float: right;
+	height: 24px;
+	margin: 12px 9px 4px 0;
+	overflow: hidden;
+	text-indent: -10000em;
+	width: 37px;
+}
+
+#global-search fieldset {
+	background: url(../images/header/bg-global-search-fieldset.png) no-repeat;
+	height: 41px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 551px;
+}
+
+#global-search input.text {
+	background: #fff url(../images/header/bg-global-search-input.png) no-repeat;
+	border: none;
+	color: #999;
+	float: left;
+	font-size: 13px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin: 11px 0 0 13px;
+	padding: 5px 9px 3px;
+	vertical-align: middle;
+	width: 276px;
+}
+
+#global-search input.text.focus {
+	color: #036;
+}
+
+#global-search fieldset #global-search-category-wrapper {
+	display: block;
+	height: 31px;
+	left: 0;
+	padding: 0;
+	position: absolute !important;
+	text-align: left;
+	top: 0;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category {
+	background: url(../images/header/bg-global-search-category.png) no-repeat;
+	cursor: pointer;
+	height: 19px;
+	left: 307px;
+	margin: 0;
+	padding: 5px 8px 0;
+	position: absolute;
+	top: 11px;
+	width: 174px;
+	z-index: 3000;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category a#global-search-trigger {
+	color: #555;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category a#global-search-trigger:hover {
+	text-decoration: none;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category .drop-down {
+	background: transparent url(../images/header/bg-select-category.png) no-repeat 50% 100%;
+	display: none;
+	left: -2px;
+	position: absolute;
+	text-align: left;
+	top: 1px;
+	width: 194px;
+	z-index: 3000;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category.over .drop-down {
+	display: block;
+	line-height: 18px;
+	padding: 2px 2px 15px;
+	vertical-align: middle;
+	width: 190px;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category .drop-down a {
+	background: none;
+	color: #555;
+	display: block;
+	padding: 0 8px;
+	width: 174px;
+}
+
+#global-search fieldset #global-search-category-wrapper #global-search-category .drop-down a:hover,
+#global-search fieldset #global-search-category-wrapper #global-search-category .drop-down li.selected a {
+	background-color: #d1d1d1;
+	text-decoration: none;
+}
+/* @end Global Search */
+
+/* @group My Account */
+#my-account {
+	color: #333;
+	float: left;
+	font-size: 11px !important;
+	line-height: 11px;
+	position: absolute;
+	right: 14px;
+	text-align: right;
+	top: 18px;
+}
+
+#my-account li {
+	/*border-left: 1px solid #666;*/
+	float: left;
+	margin-left: 13px;
+	padding-left: 18px;
+}
+
+#my-account li.country img {
+	margin-right: 2px;
+	position: relative;
+	top: 1px;
+}
+
+#my-account li.first {
+	border-left: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#my-account li.my-account {
+	margin-left: 15px;
+	margin-right: -13px;
+	padding-left: 0;
+	position: relative;
+	text-align: center;
+	width: 110px;
+}
+
+#my-account li.my-account span {
+	background: url(../images/header/bg-my-account.png) no-repeat 0 0;
+	display: block;
+	height: 15px;
+	margin-bottom: -16px;
+	padding-top: 12px;
+	position: relative;
+	top: -12px;
+	width: 110px;
+}
+
+#my-account li.my-account.over span {
+	background-position: 0 -27px;
+}
+
+#my-account li.my-account span .my-account-trigger {
+	background: url(../images/header/icon-my-account.png) no-repeat 100% 5px;
+	padding-right: 10px;
+}
+
+#my-account li.my-account span .my-account-trigger:hover {
+	text-decoration: none;
+}
+
+#my-account li.my-account.over span .my-account-trigger {
+	color: #e16f00 !important;
+}
+
+#my-account li.my-account .my-account-top {
+	background: url(../images/header/bg-my-account.png) no-repeat 0 -54px;
+	display: none;
+	height: 8px;
+	left: 0;
+	position: absolute;
+	top: 15px;
+	width: 230px;
+	z-index: 6000;
+}
+
+#my-account li.my-account.over .my-account-top {
+	display: block;
+}
+
+#my-account li.my-account ul {
+	background: url(../images/header/bg-my-account.png) no-repeat 0 100%;
+	display: none;
+	left: 0;
+	padding: 6px 15px 20px;
+	position: absolute;
+	top: 23px;
+	width: 200px;
+	z-index: 6000;
+}
+
+#my-account li.my-account.over ul {
+	display: block;
+}
+
+#my-account li.my-account ul li {
+	border-left: none;
+	float: none;
+	font-size: 12px;
+	line-height: 22px;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+
+#my-account li.my-account ul li a:link,
+#my-account li.my-account ul li a:visited {
+	color: #004799;
+	text-decoration: none;
+}
+
+#my-account li.my-account ul li a:hover,
+#my-account li.my-account ul li a:active {
+	color: #e16f00;
+	text-decoration: none;
+}
+
+#my-account li.quick-order {
+	border-color: #004799;
+}
+
+#my-account li.quick-order a {
+	background: url(../images/header/icon-quick-order.png) no-repeat 0 1px;
+	padding-left: 20px;
+}
+
+#my-account li a:link,
+#my-account li a:visited,
+#my-account li a:hover,
+#my-account li a:active {
+	color: #004799;
+}
+
+#my-account li a:link,
+#my-account li a:visited {
+	text-decoration: none;
+}
+
+#my-account li a:hover,
+#my-account li a:active {
+	text-decoration: underline;
+}
+/* @end My Account */
+/* @end Header */
+
+/* @group Global Nav */
+#global-nav {
+	background: transparent url(../images/header/global-nav/global-nav.png) repeat-x;
+	height: 39px;
+	width: 970px;
+}
+
+#global-nav a {
+	color: #fff;
+}
+
+/* @group Primary Nav */
+#global-nav #primary-nav {
+	float: none;
+	font-size: 13px;
+	line-height: 11px;
+	padding-left: 11px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#global-nav #primary-nav li {
+	float: left;
+	position: relative;
+}
+
+#global-nav #primary-nav li a {
+	background: no-repeat 0 0;
+	display: block;
+	height: 14px;
+	margin-top: -3px;
+	padding: 17px 0 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+#global-nav #primary-nav li.over a {
+	color: #d15c23;
+	text-decoration: none;
+}
+
+#global-nav #primary-nav li.over a {
+	background-position: 0 -90px !important;
+}
+
+#global-nav #primary-nav li .drop-down {
+	background: 50% 100%;
+	display: none;
+	float: left;
+	font-size: 12px;
+	left: 0;
+	line-height: 22px;
+	padding: 10px 20px 16px 20px;
+	position: absolute;
+	text-transform: none;
+	top: 39px;
+	z-index: 3000;
+}
+
+#global-nav #primary-nav .drop-down-divider {
+	float: left;
+}
+
+#global-nav #primary-nav li#nav-products .drop-down-divider {
+    background: transparent url(../images/header/global-nav/primary-nav/header-divider.png) 54% 50% repeat-y;
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down-divider {
+    background: transparent url(../images/header/global-nav/primary-nav/header-divider.png) 49% 50% repeat-y;
+}
+
+#global-nav #primary-nav li#nav-support .drop-down {
+	padding-bottom: 5px;
+}
+
+#global-nav #primary-nav li.over .drop-down {
+	display: block;
+}
+
+#global-nav #primary-nav li.over .drop-down shape {
+	display: inline;
+}
+
+#global-nav #primary-nav li .drop-down .column-1 {
+	float: left;
+}
+
+#global-nav #primary-nav li .drop-down .column-2 {
+	float: right;
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down .column-1 {
+	width: 48%;
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down .column-2 {
+	width: 48%;
+}
+
+#global-nav #primary-nav li#nav-products .drop-down .column-1 {
+	width: 53%;
+}
+
+#global-nav #primary-nav li#nav-products .drop-down .column-2 {
+	width: 43%;
+}
+
+#global-nav #primary-nav li .drop-down h5 {
+	color: #ababab;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#global-nav #primary-nav li .drop-down a {
+	background: none;
+	color: #004799 !important;
+	display: inline;
+	height: auto;
+	padding: 0;
+	position: static;
+	text-align: left;
+}
+
+#global-nav #primary-nav li .drop-down a:hover {
+	color: #d15c23 !important;
+}
+
+#global-nav #primary-nav li .drop-down li {
+	float: none;
+	line-height: 13px;
+	padding: 5px 0 4px;
+	position: static;
+}
+
+#global-nav #primary-nav li .drop-down ul {
+	padding-bottom: 4px;
+}
+
+#global-nav #primary-nav li#nav-products .drop-down ul,
+#global-nav #primary-nav li#nav-support .drop-down ul {
+	padding-bottom: 15px;
+}
+
+#global-nav #primary-nav li .drop-down a.over {
+	color: #d15c23;
+}
+
+#global-nav #primary-nav li#nav-products .drop-down,
+#global-nav #primary-nav li#nav-products .drop-down-divider {
+    width: 505px;
+}
+
+#global-nav #primary-nav li#nav-products .drop-down {
+	background-image: url(../images/header/global-nav/primary-nav/products.png);
+}
+
+#global-nav #primary-nav li#nav-products a {
+	background-image: url(../images/header/global-nav/primary-nav/products.png);
+	width: 107px;
+}
+
+#global-nav #primary-nav li#nav-products li a {
+	background-image: none;
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down,
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down-divider {
+    width: 465px;
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies .drop-down {
+	background-image: url(../images/header/global-nav/primary-nav/applications-and-technologies.png);
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies a {
+	background-image: url(../images/header/global-nav/primary-nav/applications-and-technologies.png);
+	width: 253px;
+}
+
+#global-nav #primary-nav li#nav-applications-and-technologies li a {
+	background-image: none;
+}
+
+#global-nav #primary-nav li#nav-services .drop-down {
+	background-image: url(../images/header/global-nav/primary-nav/services.png);
+	width: 210px;
+}
+
+#global-nav #primary-nav li#nav-services a {
+	background-image: url(../images/header/global-nav/primary-nav/services.png);
+	width: 97px;
+}
+
+#global-nav #primary-nav li#nav-services li a {
+	background-image: none;
+}
+
+#global-nav #primary-nav li#nav-support .drop-down {
+	background-image: url(../images/header/global-nav/primary-nav/support.png);
+	width: 195px;
+}
+
+#global-nav #primary-nav li#nav-support a {
+	background-image: url(../images/header/global-nav/primary-nav/support.png);
+	width: 110px;
+}
+
+#global-nav #primary-nav li#nav-support li a {
+	background-image: none;
+}
+
+#global-nav #primary-nav li#nav-learning-and-events .drop-down {
+	background-image: url(../images/header/global-nav/primary-nav/learning-and-events.png);
+	width: 149px;
+}
+
+#global-nav #primary-nav li#nav-learning-and-events a {
+	background-image: url(../images/header/global-nav/primary-nav/learning-and-events.png);
+	width: 189px;
+}
+
+#global-nav #primary-nav li#nav-learning-and-events li a {
+	background-image: none;
+}
+/* @end Primary Nav */
+
+/* @group Secondary Nav */
+#global-nav #secondary-nav {
+	float: right;
+	font-size: 10px;
+	line-height: 10px;
+	padding-right: 0;
+	vertical-align: middle;
+}
+
+#global-nav #secondary-nav li {
+	float: left;
+	height: 10px;
+	margin: 0;
+	padding: 14px 0 0 0;
+	position: relative;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders {
+	background: url(../images/header/global-nav/secondary-nav/my-baskets-orders.png) no-repeat 100% 0;
+	padding-right: 25px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	text-align: center;
+	width: 123px;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders.over {
+	background: url(../images/header/global-nav/secondary-nav/my-baskets-orders.png) no-repeat 100% -27px !important;
+	cursor: pointer;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders a.icon {
+	background: url(../images/header/icon-shopping-cart.png) no-repeat 0 -1px;
+	display: block;
+	padding: 0 0 2px 21px;
+	white-space: nowrap;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders a.icon:focus,
+#global-nav #secondary-nav li#my-baskets-orders a.icon:hover {
+	text-decoration: none;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders a.icon span {
+	background: url(../images/header/icon-my-baskets-orders.png) no-repeat 100% 4px;
+	padding-right: 11px;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders.over a.icon {
+	background-position: 0 -37px;
+	color: #d15c23;
+	text-decoration: none;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders.over a.icon span {
+	background-position: 100% -30px;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders .drop-down {
+	background: url(../images/header/global-nav/secondary-nav/my-baskets-orders.png) no-repeat 50% 100%;
+	display: none;
+	float: left;
+	font-size: 12px;
+	line-height: 22px;
+	padding: 2px 20px 16px;
+	position: absolute;
+	right: 0;
+	text-transform: none;
+	top: 35px;
+	width: 180px;
+	z-index: 3000;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders .drop-down-top {
+	background: url(../images/header/global-nav/secondary-nav/my-baskets-orders.png) no-repeat 50% -54px;
+	display: none;
+	height: 8px;
+	position: absolute;
+	right: 0;
+	top: 27px;
+	width: 220px;
+	z-index: 3000;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders .drop-down a {
+	background: none;
+	color: #004799;
+	display: inline;
+	height: auto;
+	padding: 0;
+	position: static;
+	text-align: left;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders .drop-down a:hover {
+	color: #d15c23;
+	text-decoration: none;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders .drop-down li {
+	float: none;
+	height: auto;
+	padding: 0;
+	position: static;
+	text-align: left;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders.over .drop-down {
+	display: block;
+}
+
+#global-nav #secondary-nav li#my-baskets-orders.over .drop-down-top {
+	display: block;
+}
+/* @end Secondary Nav */
+/* @end Global Nav */
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Footer
+
+Global Styles [footer.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+03/15/2010
+
+Copyright (c) 2010 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+/* @group B2B Exit Modal */
+#b2b-exit-modal {
+	background: url(../images/footer/bg-b2b-exit-modal.png) no-repeat;
+	height: 327px;
+	left: 50%;
+	margin: -163px 0 0 -317px;
+	position: fixed;
+	top: 50%;
+	width: 635px;
+	z-index: 20000;
+}
+
+#b2b-exit-modal .yes {
+	background-color: transparent;
+	display: block;
+	height: 25px;
+	left: 271px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -10000em;
+	top: 236px;
+	width: 41px;
+}
+
+#b2b-exit-modal .no {
+	background-color: transparent;
+	display: block;
+	height: 25px;
+	left: 328px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -10000em;
+	top: 236px;
+	width: 36px;
+}
+
+#b2b-exit-modal a:focus {
+	outline: 0;
+}
+
+#b2b-exit-modal-underlay {
+	background: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+/* @end B2B Exit Modal */
+
+/* @group Footer */
+#footer {
+	background: url(../images/footer/bg-footer.png) repeat-x;
+	clear: both;
+	float: left;
+	line-height: 16px;
+	padding: 15px 0 72px;
+	width: 970px;
+}
+
+#footer * {
+	color: #8c8c8c;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	font-size: 11px !important;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer h4 {
+	clear: both;
+	color: #5b5b5b;
+	font-weight: bold !important;
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+#footer strong {
+	font-weight: bold;
+}
+
+#footer #footer-wrapper {
+	background: url(../images/footer/bg-footer-wrapper.png) no-repeat 0 100%;
+	float: left;
+	padding: 1px 0 0;
+	width: 100%;
+}
+
+#footer #footer-help,
+#footer #guides-and-tools,
+#footer #legal-info,
+#footer #life-technologies,
+#footer #shop {
+	float: left;
+}
+
+#footer #footer-help {
+	padding: 0 11px 0 15px;
+	width: 159px;
+}
+
+#footer #guides-and-tools {
+	padding: 0 11px 0 29px;
+	width: 187px;
+}
+
+#footer .hr {
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	height: 1px;
+	margin-bottom: 3px;
+	padding-top: 23px;
+	width: 100%;
+}
+
+#footer .hr hr {
+	display: none;
+}
+
+#footer #legal-info {
+	padding-left: 14px;
+}
+
+#footer #legal-info * {
+	color: #737373;
+}
+
+#footer #legal-info ul {
+	margin-bottom: 2px;
+}
+
+#footer #legal-info ul li {
+	background: url(../images/footer/icon-bar.png) no-repeat 0 3px;
+	display: inline;
+	margin-left: 6px;
+	padding-left: 12px;
+}
+
+#footer #legal-info ul li.first {
+	background: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#footer #life-technologies {
+	padding: 0 11px 0 19px;
+	width: 208px;
+}
+
+#footer #life-technologies fieldset {
+	display: inline;
+	margin: 0;
+}
+
+#footer #life-technologies #follow-us {
+	float: left;
+	margin-bottom: 7px;
+	padding-top: 12px;
+}
+
+#footer #life-technologies #follow-us h5 {
+	color: #5b5b5b;
+	font-weight: normal;
+	margin-bottom: 3px;
+}
+
+#footer #life-technologies #follow-us ul {
+	float: left;
+	margin-left: 2px;
+	width: 100%;
+}
+
+#footer #life-technologies #follow-us ul li {
+	float: left;
+	margin-right: 6px;
+}
+
+#footer .see-more {
+	background: url(../images/footer/icon-see-more.png) no-repeat 100% 4px;
+	padding-right: 14px;
+}
+
+#footer #shop {
+	padding: 0 11px 0 24px;
+	width: 285px;
+}
+
+#footer #shop .col-1,
+#footer #shop .col-2 {
+	float: left;
+}
+
+#footer #shop .col-1 {
+	width: 119px;
+}
+
+#footer #shop .col-2 {
+	width: 166px;
+}
+
+#footer #site-feedback {
+	float: right;
+	font-weight: bold;
+	padding-right: 6px;
+}
+/* @end Footer */
+
+/* @group Modals */
+.jqmWindow {
+display: none;
+position: fixed;
+top: 17%;
+left: 228px;
+width: 572px;
+padding: 0;
+}
+.jqmOverlay {
+background-color: #000;
+}
+.modal {
+position: relative;
+min-width: 400px;
+max-width: 1000px;
+z-index: 1;
+margin: 0 auto 0 10px;
+}
+.modal .content,.modal .t,.modal .b,.modal .b div {
+background: transparent url(../images/backgrounds/modalBackground.png) no-repeat top right;
+}
+.modalClose .content,.modalClose .t,.modalClose .b,.modalClose .b div {
+background: transparent url(../images/backgrounds/modalBackground-blueBar.png) no-repeat top right;
+}
+.modal .content {
+position: relative;
+zoom: 1;
+_overflow-y: hidden;
+padding: 12px 15px;
+}
+.modal .t {
+position: absolute;
+left: 0;
+top: 0;
+width: 10px;
+margin-left: -10px;
+height: 100%;
+_height: 1600px;
+background-position: top left;
+}
+.modal .b {
+position: relative;
+width: 100%;
+background-position: bottom right;
+}
+.modal .b,.modal .b div {
+height: 10px;
+font-size: 1px;
+}
+.modal .b div {
+position: relative;
+width: 10px;
+margin-left: -10px;
+background-position: bottom left;
+}
+.modal .hd,.modal .bd,.modal .ft {
+position: relative;
+}
+.modal .hd {
+text-align: right;
+height: 24px;
+}
+.modal .bd {
+margin-top: 15px;
+margin-bottom: 4px;
+}
+.modal .ft {
+font-size: 14px;
+color: #000;
+}
+.modal .wrapper {
+position: static;
+max-height: 1000px;
+}
+.modal .content h4 {
+color: #004799;
+font-size: 1.6em;
+margin-bottom: 18px;
+}
+.modal a.jqmClose {
+background: transparent url(../images/icons/modal-close.png) no-repeat right 2px;
+color: #fff;
+display: block;
+font-size: 11px;
+padding-right: 20px;
+margin-right: -2px;
+position: relative;
+top: -2px;
+}
+#selectCountry .modal .content {
+text-align: center;
+color: #888;
+}
+#selectCountry .modal .bd h4 {
+background: transparent url(../images/backgrounds/country-select-globe.jpg) no-repeat center top;
+padding-top: 60px;
+font-family: Arial,Helvetica,sans-serif;
+font-weight:400;
+}
+#selectCountry .modal .bd p {
+margin-bottom: 22px;
+}
+#selectCountry .modal .bd select {
+width: 250px;
+vertical-align: top;
+margin-top: 1px;
+}
+#selectCountry .modal .bd {
+background: #FFF url(../images/backgrounds/country-select-map.png) no-repeat center bottom;
+padding: 67px 78px 120px;
+}
+#selectCountry .modal .bd {
+font:12px/16px Verdana,Arial,Helvetica,sans-serif;
+}

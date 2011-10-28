@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.appbio.bo">
+
+    <class name="WorkDay" table="work_day" mutable="true">
+        <id name="id" column="ID" type="integer">
+            <generator class="increment"/>
+        </id>
+
+        <property name="eventId" column="EVENT_ID" type="integer" not-null="true" insert="false" update="false"/>
+        <property name="date" column="DATE" type="localDate" not-null="true"/>
+        <property name="openTime" column="OPEN_TIME" type="dateTime" not-null="true"/>
+        <property name="closeTime" column="CLOSE_TIME" type="dateTime" not-null="true"/>
+    </class>
+
+</hibernate-mapping>

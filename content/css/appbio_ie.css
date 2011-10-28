@@ -1,0 +1,2183 @@
+/* Applied Biosystems CSS */
+
+/* general */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 100%
+}
+
+a img {
+	border: 0;
+}
+
+p {
+	/* font-size: .63em; */
+	font-size: 11px !important;
+	padding: 0 !important;
+	margin: 1em 0 1em 0 !important;
+	/* font-family: Verdana, Arial, Helvetica, sans-serif; */
+	/* color: #666; */
+}
+
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #036;
+	/* font-size: 1.25em; */
+	font-size: 11px;
+	/* font-weight: normal; */
+	font-weight: bold; 
+	padding: .48em 0px .48em 0px;
+	margin: 0;
+}
+
+* html .clear {
+	font-size: 1px;
+	overflow: hidden;
+}
+
+/* basic framework: header, top tabs, , footer, copyright */
+
+.Heading {
+		/* font-size: 1.25em; */
+		font-size: 12px;
+		color: #333; 
+		font-weight: bold; 
+		padding: 10px 0 0 0
+		}
+		
+.heading {
+		/* font-size: 1.25em; */
+		font-size: 12px; 
+		color: #333; 
+		font-weight: bold; 
+		padding: 10px 0 0 0
+		}
+
+.subheading {color: #333; font-weight: bold; padding: 10px 0 0 0;}
+
+
+.thead {color: #333; font-weight: bold;}
+
+#headerWrapper {
+	background-image: url(../images/header_background.gif);
+	background-repeat: repeat-y;
+	width: 970px;
+	/* width: 815px; */
+	/* border-bottom: 1px solid #728BAB; */
+	border-bottom: 1px solid #003366;
+}
+
+#headerLeftWrapper {
+	width: 784px;
+	float: left; 
+}
+
+#headerPadTop {
+	height: 2px;
+	background: #B8C6D9;
+	border-bottom: 1px solid #000;
+	line-height: 1px;
+	overflow: visible;
+}
+/* ie5/mac filter \ The preceeding forward-slash in this comment causes ie5/mac to ignore the following rule */
+#headerPadTop {
+	overflow: hidden;
+}
+
+#headerLogoWrapper {
+	float: left; 
+	line-height: 0;
+}
+
+.headerLinkList a:link, 
+.headerLinkList a:visited, 
+.headerLinkList a:active {
+	color: #666;
+	text-decoration: none;
+}
+
+.headerLinkList a:hover {
+	color: #E38A22;
+	text-decoration: none;
+}
+
+.headerLinkListLeft a:link, 
+.headerLinkListLeft a:visited, 
+.headerLinkListLeft a:active {
+	color: #666;
+	text-decoration: none;
+}
+
+.headerLinkListLeft a:hover {
+	color: #E38A22;
+	text-decoration: none;
+}
+
+ul.headerLinkList {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	line-height: 22px;
+	margin-top: 2px;
+}
+
+ul.headerLinkList li {
+	list-style: none;
+	margin-left: 4px;
+	background-image: url(../images/bulletBlue.gif);
+	background-position: 0 10px;
+	background-repeat: no-repeat;
+	padding-left: 12px;
+}
+
+ul.headerLinkList li.cartIcon {
+	list-style: none;
+	margin-left: 0px;
+	background-image: url(../images/icon_cart_sm.gif);
+	background-position: -2px 4px;
+	background-repeat: no-repeat;
+	padding-left: 17px;
+}
+
+#headerLinkListLeft {
+width: 130px;
+float: right;
+}
+
+#headerLinkListRight {
+width: 95px;
+float: right;
+}
+
+#headerRightWrapper {
+	width: 175px;
+	height: 52px;
+	float: left;
+	line-height: 0;
+	padding: 5px 0px 0px 10px;
+	margin: 0px 0px 0px 1px;
+	display: inline;
+	/* border: 1px solid #ff0000 */
+}
+
+#formHeaderSearchSelect {
+	width: 185px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid #5788B0; 
+}
+
+#formHeaderSearchField {
+	float: left;
+	width: 141px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+	background-color: #fff;
+	padding: 1px 0px 2px 4px;
+	margin: 3px 0px 0px 0px;
+	border: 1px solid #5788B0;
+}
+html>body #formHeaderSearchField { /* ie6 filter... ie6 ignores the following rule */
+	padding: 0px 0px 2px 5px;
+	width: 141px;
+}
+
+#formHeaderSearchButton {
+	float: left;
+    margin-top: 2px;
+    margin-left: 3px;
+	padding: 0px;
+	border: none;
+}
+
+
+
+#navTabWrapper {
+	width: 970px;
+    padding-left: 155px;
+	/* background-color: #728BAB; */
+	background-color: #004799;
+	background: url(../images/navtab_background.gif);
+	height: 27px;
+	line-height: 1px;
+	/* border: 1px solid #000; */
+}
+
+#navTabWrapperSeparator {
+	width: 1px;
+	height: 27px;
+	float: left;
+	/* background-color: #B8C6D9; */
+	background-color: #E2E2E2;
+	/* border: 1px solid #0000ff; */
+}
+
+#navTabInnerWrapper {
+	float: left;
+	/* border: 1px solid #ff0000; */
+}
+
+.container {
+    height: 5px;
+    background: url(../images/subnav_leftSpacer_new.gif);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: scroll;
+    float: left;
+    width: 970px;
+}
+
+.noQuickLinks {
+	width: 970px;	
+	height: 5px;
+	background: url(../images/subnav_leftSpacer_new.gif);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: scroll;
+    float: left;
+	position: absolute;
+	display:block;
+}
+	
+
+#footerhome {
+	width: 100%;
+	font-size: 10px;
+	color: #fff;
+	padding: 4px 0px 5px 1px;
+	/* background-color: #728BAB; */
+	background-color: #004799;
+}
+
+#footerhome a {
+	color: #fff;
+	text-decoration: none;
+	/* background-color: #728BAB; */
+	background-color: #004799;
+	margin: 0px 8px 0px 8px;
+}
+
+#footerDisclaimer {
+	font-size: 10px;
+	width: 969px;
+	padding-top: 2px;
+}
+
+#footerDisclaimer a {
+	color: #666;
+	text-decoration: none;
+	margin: 2px 8px 0px 8px;
+}
+
+#countrySites {
+	width: 970px;
+	font-size: 10px;
+	color: #666;
+	padding: 3px 0px 5px 0px;
+	/* background-color: #DCE5E8; */
+	background-color: #E2E2E2;
+}
+
+#countrySites a {
+	/* color: #666; */
+	color: #003366;
+	text-decoration: none;
+	margin: 0px 8px 0px 8px;
+}
+
+.ambion_new {
+    padding-left: 37px;
+}
+
+/* Footer Home Styles */
+
+#HomepageSubHeading {
+	color: #E38A22;
+	font-weight: bold; 
+	padding: 3px 10px 1px 10px;
+	}
+
+ul.homepageLinkList {
+	/* background-color: #ff0000; */
+	/* margin: 2px 0 0 0; */
+	padding: 3px 0 0 0;
+	font-size: 10px;
+	/* line-height: 22px; */ 
+}
+
+ul.homepageLinkList li {
+	/* background-color: #DCE5E8; */
+	list-style: none;
+	margin-left: 10px;
+	background-image: url(../images/global-pointer.gif);
+	background-position: 0 5px; 
+	background-repeat: no-repeat;
+	padding-left: 12px;
+}
+
+ul.homepageLinkList a:link, 
+ul.homepageLinkList a:visited, 
+ul.homepageLinkList a:active {
+	color: #336699;
+	text-decoration: none;
+}
+
+ul.homepageLinkList a:hover {
+	color: #E38A22;
+	text-decoration: underline; 
+}
+
+/* Page Elements - Content Area CSS */
+
+#contentWrapperProdDef {
+	width: 970px;
+	background-color: white;
+	/* border: 2px solid #FFF000; */
+}
+
+#contentLeftColumn {
+	float: left; 
+	width: 155px;
+    padding-left: -1px;
+    /* border-right: 1px solid #B8C6D9; */
+
+}
+
+.twentyFiveLogo {
+padding: 0px 0px 0px 0px;
+margin: -5px 0px 0px 0px;
+}
+
+.twentyFiveLogo2 {
+padding: 0px 0px 0px 0px;
+margin: 10px 0px 0px 0px;
+}
+
+
+#contentLeftColumn2 {
+	float: left;
+	width: 970px;
+	background-color: white;
+
+}
+#contentRightColumnsWrapper {
+	float: left;
+    width: 815px;
+	border-left: 1px solid #B8C6D9; 
+	background-color: white;
+    /*position: relative;*/
+    /*top: -110px;*/
+    /*left: 155px;*/
+}
+
+#contentBottomSpace {
+	float: right;
+	width: 815px;
+    height: 4px;
+    border-left: 1px solid #B8C6D9;
+	background-color: white;
+}
+
+#pageContentMiddle {
+	padding: 15px 0 45px 15px;
+	float: left; 
+	width: 799;
+    /*width: 814;*/
+    background-color: white;
+}
+
+
+
+
+/* login */
+
+#loginWrapper {
+	line-height: 0;
+	padding: 4px 0px 0px 7px;
+	margin: 0px 0px 0px 0px;
+	background-color: white;
+	
+}
+
+#formStoreLoginLabel {
+	margin: 0 0 2px 0;
+}
+
+
+#formLoginField {
+	float: left;
+	width: 74px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+	background-color: #fff;
+	padding: 1px 0px 1px 4px;
+	margin: 3px 0px 0px 0px;
+	border: 1px solid #5788B0;
+}
+html>body #formLoginField { /* ie6 filter... ie6 ignores the following rule */
+	padding: 0px 0px 2px 5px;
+	width: 73px;
+}
+
+#formLoginLabel {
+	font-size: 10px;
+	float: left;
+	margin: 3px 0px 0px 0px;
+	padding: 0px;
+}
+
+#formLoginButtonWrapper {
+	text-align: right;	
+}
+
+#formLoginButton {
+	font-size: 10px;
+	margin: 6px 8px 0 0;
+}
+
+#formLoginRegister {
+	font-size: 10px;
+	line-height: 10px;
+	text-align: right;
+	margin: 3px 8px 6px -4px;
+	letter-spacing: -.6px;
+}
+/* ie5/mac filter \ The preceeding forward-slash in this comment causes ie5/mac to ignore the following rule */
+#formLoginRegister {
+	margin: 3px 8px 6px 0;
+	letter-spacing: -1px;
+}
+
+
+
+.homeNavHeader {
+	font-size: 11px;
+	line-height: 15px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #728BAB;
+	border-top: 1px solid #B8C6D9;
+	border-bottom: 1px solid #B8C6D9;
+	padding: 2px 8px 2px 8px;
+}
+
+
+/* left navigation */
+
+.leftNavHeaderOLD {
+	font-size: 11px;
+	line-height: 15px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #728BAB;
+	border-top: 1px solid #B8C6D9;
+	border-bottom: 1px solid #B8C6D9;
+	padding: 2px 8px 2px 8px;
+}
+
+.leftNavHeader {
+	background-image:url(../images/gradient.jpg);
+	background-repeat: repeat-x;
+	font-size: 11px !important;
+	line-height: 15px;
+	color: #fff;
+	font-weight: bold !important;
+	background-color: #004799;
+	border-top: 1px solid #004799;
+	border-bottom: 1px solid #004799;
+	padding: 4px 8px 4px 8px !important;
+}
+
+a.leftNavSection, a.leftNavSection:visited, a.leftNavSection:active, a.leftNavSection:link, leftNavSection:hover
+a.leftNavSectionOn, a.leftNavSectionOn:visited, a.leftNavSectionOn:active, a.leftNavSectionOn:link, leftNavSectionOn:hover {
+ width: 155px;
+ display: block;
+ font-size: 10px;
+ line-height: 14px;
+ /* color: #375072; */
+ /* background-color: #EDF7FB; */
+ /* border-bottom: 1px solid #728BAB; */
+ color: #003366;
+ text-decoration: none;
+ background-color: #F0F0F0;
+ border-bottom: 1px solid #728BAB;
+ padding: 2px 8px 3px 8px;
+}
+html>body a.leftNavSection { /* ie6 filter... ie6 ignores the following rule */
+	letter-spacing: .5px;
+}
+
+a.leftNavSection:hover,
+a.leftNavSectionOn, a.leftNavSectionOn:visited, a.leftNavSectionOn:active, a.leftNavSectionOn:link, leftNavSectionOn:hover {
+	background-color: #fff;
+}
+
+a.leftNavSectionOn, a.leftNavSectionOn:visited, a.leftNavSectionOn:active, a.leftNavSectionOn:link, leftNavSectionOn:hover {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 3px 8px 2px 8px;
+}
+
+ul.leftNavLinkList {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #728BAB;
+}
+
+.leftNavLinkList li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin: 0 0 0 0;
+	font-size: 10px;
+	line-height: 13px;
+	margin: 0 0 1px 0;
+	width: 154px;
+}
+
+.leftNavLinkList a, .leftNavLinkList a:visited, .leftNavLinkList a:active, .leftNavLinkList a:link, .leftNavLinkList a:hover {
+	color: #1279c6;
+	display: block;
+	height: 0px;
+	text-decoration: none;
+	padding: 1px 0 4px 20px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	background-image:  url(../images/bullet.jpg);
+	background-repeat: no-repeat;
+	background-position: 9px 7px;
+	margin:0;
+}
+
+html>body .leftNavLinkList a, .leftNavLinkList a:visited, .leftNavLinkList a:active, .leftNavLinkList a:link, .leftNavLinkList a:hover  { /* ie6 filter... ie6 ignores the following rule */
+	height: 100%;
+	letter-spacing: .5px;
+}
+
+.leftNavLinkList a:hover, a.leftNavLinkListOn, a.leftNavLinkListOn:visited, a.leftNavLinkListOn:active, a.leftNavLinkListOn:link, leftNavLinkListOn:hover {
+	background-color: #FBEEDE;
+}
+
+.subsubnav a, .subsubnav a:visited, .subsubnav a:active, .subsubnav a:link, .subsubnav a:hover {
+ color: #555555;
+ display: block;
+ height: 0px;
+ text-decoration: none;
+ padding: 1px 0 4px 20px;
+ /* background-image:  url(/images/1x1spacer.gif); */
+ /* background-repeat: no-repeat; */
+ /* background-position: 5px 5px; */
+ margin:0;
+}
+
+html>body .subsubnav a, .subsubnav a:visited, .subsubnav a:active, .subsubnav a:link, .subsubnav a:hover  { /* ie6 filter... ie6 ignores the following rule */
+	height: 100%;
+	letter-spacing: .5px;
+}
+
+.leftLoginBottom {	/* use only when no left nav is present */
+	height: 1px;
+	width: 100%;
+	background-color: #B8C6D9;
+	overflow: hidden;
+}
+
+#breadcrumbWrapper {
+    font-size: 1.2em;
+    line-height: 1.63em;
+    padding: 0 0 3px 7px;
+    border-bottom: 1px solid #DCDFE8;
+}
+
+#breadcrumbWrapper a {
+	margin: 0 .36em 0 .36em;
+}
+
+html>body #breadcrumbWrapper { /* ie6 filter... ie6 ignores the following rule*/
+	letter-spacing: .05em;
+}
+
+a.button4 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		font-weight: bold;
+		padding: 1px 4px 1px 5px;
+	}
+
+	a.button4:link, a.button4:visited, a.button4:hover, a.button4:active {
+		border-right: 1px solid #999999;
+		border-bottom: 1px solid #999999;
+		background-color: #D38A1D;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+
+
+
+#tabHeader {
+	float: left;
+	width: 590px;
+	padding: 7px 17px 0 17px;
+}
+
+
+.rightNavLinkListWrapper{
+	float: left;
+	width: 189px;
+	margin: 2px 0 0 0;
+}
+
+ul.rightNavLinkList {
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	font-size: .63em;
+	line-height: 1.63em;
+}
+
+ul.rightNavLinkList li.rightNavLinkListItem {
+	list-style: none;
+	background-image: url(../images/bulletOrange.gif);
+	background-position: 9px 7px;
+	background-repeat: no-repeat;
+	padding-left: 21px;
+	margin: 0 0 0 0;
+	border-bottom: 1px solid #DCDFE8;
+}
+
+ul.rightNavLinkList li.rightNavLinkListLastItem {
+	list-style: none;
+	background-image: url(../images/bulletOrange.gif);
+	background-position: 9px 7px;
+	background-repeat: no-repeat;
+	padding-left: 21px;
+	margin: 0 0 0 0;
+}
+
+.rightNavLinkList a:link, .rightNavLinkList a:visited, .rightNavLinkList a:hover, .rightNavLinkList a:active {
+	text-decoration: none;
+}
+
+#tabHeaderToWrapperVerticalPad {
+	height: 15px;
+}
+
+#noTabRightCapWrapper {
+	background: url(../images/tabs/tabBG.gif) 0 -5px repeat-x;
+	background-color: #fff;
+	height: 24px;
+}
+
+#tabWrapper {
+	background: url(../images/tabs/tabBG.gif);
+	background-repeat: repeat-x;
+	margin: 0 0 0 17px;
+	line-height: .63em;
+}
+
+#tabContentWrapper {
+	margin: 0 0 30px 17px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background: url(../images/tab_content_wrapper_background.gif);
+	background-repeat: repeat-y;
+}
+/* Hides from IE-mac \*/
+* html #tabContentWrapper {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+#noTabContentWrapper {
+	margin: 0 0 0 17px;
+	background: url(../images/tab_content_wrapper_background.gif);
+	background-position: 1px 0;
+	background-repeat: repeat-y;
+}
+/* Hides from IE-mac \*/
+* html #noTabContentWrapper {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+.tabInnerFooter {
+	margin: 0 223px 0 17px;
+}
+
+.noTabInnerFooter {
+	margin: 0 240px 0px; 0;
+}
+
+#tabContentWrapperSingleColumn {
+	margin: 0 0 30px 17px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+/* Hides from IE-mac \*/
+* html #tabContentWrapper {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+#tabContentSingle {
+	padding: 15px 220px 0 15px;
+}
+
+#noTabContentMiddle {
+	float: left;
+	width: 607px;
+}
+
+
+
+#pageApplicationsHeader {
+	font-size: .63em;
+	color: #003366;
+	font-weight: bold;
+	/* background-color: #2A466E; */
+	background-color: #f0f0f0;
+	padding: 3px 4px 5px 8px;
+}
+
+#contentListWrapper {
+	float: left;
+	width: 250px;
+}
+
+ul.contentListOLD {
+	margin: 0;
+	padding: 0;
+	font-size: .69em;
+	line-height: 1.33em;
+	font-weight: bold;
+}
+
+ul.contentList {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	line-height: 1.33em;
+	font-weight: bold;
+}
+
+ul.contentList li {
+	list-style: none;
+	background-image: url(../images/bulletOrange_lg.gif);
+	background-position: 0 .9em;
+	background-repeat: no-repeat;
+	padding: .4em 0 .4em 10px;
+	margin: 0 0 0 0;
+	/* border-bottom: 1px solid #F7DDB7; */
+}
+
+.contentList a:link, .contentList a:visited, .contentList a:hover, .contentList a:active {
+	text-decoration: none;
+    font-size: 12px;
+	font-weight: bold;
+}
+
+.contentSubListOLD {
+	font-size: .63em;
+	margin: 12px 10px 12px 10px;
+}
+
+.contentSubList {
+	font-size: 10px;
+	margin: 2px 10px 15px 10px !important;
+}
+
+.contentSubList ul {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.contentSubListOLD li {
+	list-style: none;
+	background-image: url(../images/bulletBlue_dash_lg.gif);
+	background-position: 0 .4em;
+	background-repeat: no-repeat;
+	padding: 0 0 0 9px;
+	margin: 0 0 0 0;
+}
+
+.contentSubList li {
+	list-style: none;
+	background-image: url(../images/bulletGrey.gif);
+	background-position: 0 .4em;
+	background-repeat: no-repeat;
+	padding: 0 0 1px 9px;
+	margin: 0 0 0 0;
+}
+
+.contentSubList a:link, .contentSubList a:visited, .contentSubList a:active {
+	color: #525252;
+	text-decoration: none;
+    font-weight:normal;
+}
+
+.contentSubList a:hover 
+{
+	color: #E38A22;
+}
+
+.siteMapHeader a:link, .siteMapHeader a:visited, .siteMapHeader a:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+.siteMapHeader a:hover 
+{
+	color: #E38A22;
+}
+
+.siteMapCategory {
+	background-color: #EDF7FB;
+	border : 1px solid #999999;
+}
+
+.siteMapHeader {
+	color: #003366;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.siteMapSubHeader {
+	color: #325F99;
+	font-weight: bold;
+}
+
+td.siteMapCategory p {
+	margin-left: 5px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	padding: 0px;
+}
+
+.contactredbold {
+	font-weight: bold; 
+	color: #FF0000; 
+}
+
+#tabContentMiddle {
+	float: left;
+	width: 606px;
+}
+
+#tabContentMiddleInnerWrapper {
+	margin: 15px 15px 12px 15px;
+}
+
+#tabContentMiddleInnerWrapperDetailedInformationTab {
+	margin: 30px 100px 12px 15px;
+}
+
+#tabContentMiddleInnerWrapperTechnicalSpecificationsTab {
+	margin: 30px 71px 12px 15px;
+}
+
+#productOverviewImageClickWrapper {
+	margin: 4px 0 0 0;
+	line-height: 1.125em;
+}	
+
+#productOverviewImageClickIcon {
+	float: left;
+	margin: 0 5px 0 0;
+}	
+
+#productOverviewImageClickText {
+	float: left;
+	cursor: pointer;
+}	
+
+#productOverviewImageWrapper {
+	float: left;
+	font-size: .63em;
+	line-height: 0;
+	width: 184px;
+}	
+
+#productOverviewImageWrapper a {
+	text-decoration: none;
+}	
+
+#productImage {
+	border: 1px solid #ccc;
+}
+
+#productImageShadow {
+	height: 1px;
+	width: 170px;
+	background-color: #999;
+	overflow: hidden;
+}
+
+
+#productOverviewListWrapper {
+	float: left;
+	width: 392px;
+}	
+
+#productOverviewListWrapperFull {	/* use this class when no product image is present */
+	float: left;
+	width: 100%;
+}	
+
+ul.productOverviewList {
+	margin: 0;
+	padding: 0;
+	font-size: .63em;
+	line-height: 1.3em;
+	margin-top: 2px;
+}
+
+ul.productOverviewList li {
+	list-style: none;
+	background-image: url(../images/bulletBlue.gif);
+	background-position: 0 7px;
+	background-repeat: no-repeat;
+	padding-left: 8px;
+	margin: 0 0 1em 0;
+}
+
+
+
+.productOverviewTable {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 10px 0 0 0;
+}
+
+.productOverviewTable th {
+	font-size: .69em;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	background-color: #7F96B5;
+	white-space: nowrap;
+	padding: 4px 10px 4px 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.sortable {
+	background: url(../images/bullet_sortable.gif) 7px 50% no-repeat;
+	cursor: pointer;
+}
+
+.sorted {
+	background: url(../images/bullet_sorted.gif) 7px 50% no-repeat;
+}
+
+
+.productOverviewTable td {
+	font-size: .63em;
+	padding: .63em 10px .63em 15px;
+	vertical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.productOverviewTable th.productNameCol {
+	border-right: 0;
+}
+
+.productOverviewTable td.productNameCol {
+	padding: .63em 4px .63em 15px;
+	border-right: 0;
+}
+
+.productOverviewTable td.iconCol {
+	padding: .63em 6px .63em 0;
+}
+
+.productOverviewTable th.iconCol {
+	padding: 0;
+}
+
+
+.productOverviewTable td.listPriceCol {
+	white-space: nowrap;
+	width: 121px;
+}
+
+.productOverviewTable th.listPriceCol {
+	white-space: nowrap;
+	width: 121px;
+}
+
+.productOverviewTable td.checkCol {
+	background-color: #EDF7FB;
+	padding: .3em 0 0 0;
+	text-align: center;
+	width: 22px;
+}
+
+.productOverviewTable th.checkCol {
+	padding: 0 0 0 0;
+	text-align: center;
+	width: 22px;
+}
+
+
+.tableInCell {
+	width: 100%;
+	margin: 0 0 0 0;
+}
+
+.tableInCell td {
+	font-size: 100%;
+	line-height: 1.2em;
+	border: 0;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+
+
+.productGeneralTable {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+}
+
+.productGeneralTable th {
+	font-size: .69em;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	background-color: #7F96B5;
+	white-space: nowrap;
+	padding: 4px 10px 4px 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.productGeneralTable th.darkerHeader {
+	background-color: #728BAB;
+}
+
+.productGeneralTable th.lessPadding {
+	background-color: #728BAB;
+	padding: 4px 10px 4px 9px;
+}
+
+.productGeneralTable td {
+	font-size: .63em;
+	padding: .63em 10px .63em 15px;
+	vertical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.productGeneralTable td.labelCell {
+	width: 148px;
+}
+
+.nestedTextTable {
+	font-size: 1.63em;
+}
+
+.nestedTextTable td {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nestedTextTable td.firstCell {
+	width: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.productOverviewTable a, .productOverviewTable a:link, .productOverviewTable a:visited, .productOverviewTable a:active, .productOverviewTable a:hover {
+	text-decoration: none;
+}
+
+.instructionalFooterText {
+	float: left;
+	width: 250px;
+	font-size: .63em;
+	margin: .3em 0 0 0;
+}
+
+.pagination {
+	float: right;
+	width: 250px;
+	font-size: .63em;
+	text-align: right;
+	margin: .3em 0 0 0;
+}
+
+a.paginationLink, a.paginationLink:link, a.paginationLink:visited, a.paginationLink:active, a.paginationLink:hover {
+	text-decoration: none;
+}
+
+.paginationCurrent {
+	color: #E08703;
+	font-weight: bold;
+}
+
+
+
+
+#noTabContentRight {
+	float: right;
+	width: 190px;
+	background-color: #EDECEC;
+}
+
+#tabContentRight {
+	float: right;
+	width: 189px;
+	background-color: #EDECEC;
+}
+
+a.printerFriendly, a.printerFriendly:visited, a.printerFriendly:active, a.printerFriendly:link, printerFriendly:hover {
+	display: block;
+	text-decoration: none;
+	color: #666;
+	background-color: #fff;
+	font-size: 10px;
+	line-height: 16px;
+	border: 1px solid #98ACC5;
+	margin: 0 9px 12px 10px;
+}
+
+
+#tabContentRightVerticalPad {
+	height: 23px;
+}
+
+#tabContentRightSeparatorWrapper {
+	line-height: 0;
+}
+
+#promoWrapper {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 0 9px 12px 10px;
+	line-height: 0;
+}
+
+#featureWrapper {
+	background-color: #fff;
+	margin: 0 9px 12px 10px;
+}
+
+#featurePromoWrapper {
+	background-color: #fff;
+	border-right: 1px solid #a3a3a3;
+	border-bottom: 1px solid #a3a3a3;
+	border-left: 1px solid #a3a3a3;
+	line-height: 0;
+}
+
+#featureBody {
+	background-color: #fff;
+	font-size: 10px;
+	border-right: 1px solid #a3a3a3;
+	border-bottom: 1px solid #a3a3a3;
+	border-left: 1px solid #a3a3a3;
+	padding: 5px 8px 8px 8px;
+}
+
+#featureHeader {
+	background-color: #d7d7d7;
+	color: #003366;
+	font-weight: normal;
+	font-size: 11px;
+	border: 1px solid #a3a3a3;
+	padding: 5px 4px 7px 8px;
+	background-image:url(../images/grad2.jpg);
+	background-repeat:repeat-x;
+}
+
+#promoQuestionWrapper {
+	margin: 0 7px 0 10px;
+	padding: 0 2px 0 0;
+	background: url(../images/promo_question_background.gif) 170px 2px no-repeat;
+}
+
+#promoQuestionBottom {
+	margin: 0 7px 12px 10px;
+	height: 2px;
+	background: url(../images/promo_question_background.gif) 2px 0 no-repeat;
+	overflow: hidden;
+}
+html>body #promoQuestionBottom { /* ie6 filter... ie6 ignores the following rule */
+	overflow: visible;
+}
+
+#promoQuestionHeader {
+	line-height: 1.63em;
+	font-size: .63em;
+	background-color: #728BAB;
+	padding: 1px 4px 3px 8px;
+}
+/* Hides from IE-mac \*/
+* html #promoQuestionHeader {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+#promoQuestionHeader a {
+	color: #666;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#promoQuestionHeaderIcon {
+	float: right;
+	margin: 2px 0 0 0;
+}
+
+#promoQuestionHeaderText {
+	float: left;
+	color: #fff;
+	font-weight: bold;
+}
+
+#promoQuestionBody {
+	background-color: #fff;
+	font-size: .63em;
+	border-right: 1px solid #728BAB;
+	border-bottom: 1px solid #728BAB;
+	border-left: 1px solid #728BAB;
+	padding: 10px 0px 8px 6px;
+}
+
+#formQuestionField {
+	float: left;
+	width: 133px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333;
+	background-color: #fff;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #728BAB;
+	margin: 0 0 10px 0;
+}
+html>body #formQuestionField { /* ie6 filter... ie6 ignores the following rule */
+	padding: 2px 4px 2px 4px;
+	width: 123px;
+}
+
+#formQuestionGoButton {
+	float: left;
+	margin: 0 0 0 3px;
+	padding: 0px;
+	border: 1px solid #999;
+}
+
+
+#promoProductImageWrapper {
+	background-color: #fff;
+	margin: 0 9px 0 10px;
+	padding: 0;
+	border: 1px solid #999;
+	overflow: hidden;
+}
+
+#promoProductImageClickWrapper {
+	background-color: #fff;
+	margin: 0 9px 12px 10px;
+	padding: 0;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	overflow: hidden;
+}
+
+a.promoProductImageClick, a.promoProductImageClick:visited, a.promoProductImageClick:active, a.promoProductImageClick:link, promoProductImageClick:hover {
+	display: block;
+	text-decoration: none;
+	background-color: #EDEDED;
+	font-size: 10px;
+	line-height: 14px;
+	border: 1px solid #fff;
+	margin: 0;
+}
+
+.promoProductImage {
+	margin: 2px 5px 0 2px;
+}
+
+
+
+
+#promoStartHereShadowWrapper {
+	font-size: .63em;
+	line-height: 1.3em;
+	margin: 0 7px 0 10px;
+	padding: 0 2px 0 0;
+	background: url(../images/promo_start_here_background.gif) 170px 2px no-repeat;
+}
+
+#promoStartHereBottom {
+	margin: 0 7px 12px 10px;
+	height: 2px;
+	background: url(../images/promo_start_here_background.gif) 2px 0 no-repeat;
+	overflow: hidden;
+}
+html>body #promoStartHereBottom { /* ie6 filter... ie6 ignores the following rule */
+	overflow: visible;
+}
+
+
+
+#promoStartHereWrapper {
+	border: 1px solid #E38A22;
+	background-color: #fff;
+}
+
+#promoStartHereHeader {
+	color: #fff;
+	font-weight: bold;
+	background-color: #E38A22;
+	padding: 0px 4px 5px 8px;
+}
+
+.promoStartItem {
+	padding: 6px 4px 6px 8px;
+}
+
+#promoSearchItem {
+	background-color: #F7DCBC;
+	padding: 3px 4px 9px 14px;
+}
+
+#formStartHereSelect {
+	width: 124px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+	padding: 0px;
+	margin: 6px 0px 0px 0px;
+	border: 1px solid #5788B0;
+}
+/* ie5/mac filter \ The preceeding forward-slash in this comment causes ie5/mac to ignore the following rule */
+#formStartHereSelect {
+	width: 126px;
+}
+
+#formStartHereField {
+	width: 135px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+	background-color: #fff;
+	padding: 2px 0px 2px 4px;
+	margin: 3px 0px 6px 0px;
+	border: 1px solid #5788B0;
+}
+html>body #formStartHereField { /* ie6 filter... ie6 ignores the following rule */
+	padding: 2px 0px 2px 5px;
+	width: 134px;
+}
+
+
+#formStartHereSelectLinkAndButtonWrapper {
+	margin: 0 10px 0 0;
+}
+
+.promoStartItemRule {
+	padding: 0 8px 4px 7px;
+}
+
+.promoStartbottomLink {
+	padding: 0 4px 9px 8px;
+}
+
+
+
+
+#promoCustomerStoriesShadowWrapper {
+	font-size: 11px;
+	line-height: 1.2em;
+	margin: 0 7px 0 10px;
+	padding: 0 2px 0 0;
+	background: url(../images/promo_question_background.gif) 170px 2px no-repeat;
+}
+
+#promoCustomerStoriesWrapper2 {
+    border: 1px solid #a3a3a3;
+    background-color: #fff;
+    font-size: 10px;
+}
+
+#promoApplicationsHeader {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 11px;
+    background-image: url(../images/gradient.jpg);
+    background-repeat: repeat-x;
+    background-color: #004799;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+}
+
+#promoCustomerStoriesBottom {
+	margin: 0 7px 12px 10px;
+	height: 2px;
+	background: url(../images/promo_question_background.gif) 2px 0 no-repeat;
+	overflow: hidden;
+}
+html>body #promoCustomerStoriesBottom { /* ie6 filter... ie6 ignores the following rule */
+	overflow: visible;
+}
+
+#promoCustomerStoriesWrapper {
+	line-height:normal;
+	border: 1px solid #a3a3a3;
+	background-color: #fff;
+}
+
+#promoCustomerStoriesHeader {
+	color: #fff;
+	font-weight: bold;
+	background-color: #728BAA;
+	padding: 2px 4px 4px 8px;
+}
+
+#customerPhoto {
+	float: left;
+	border: 1px solid #7D7D7D;
+	margin: 0 6px 0 0;
+}
+
+
+
+
+
+#promoApplicationsWrapper {
+	margin: 0 7px 0 10px;
+	padding: 0 2px 0 0;
+	background: url(../images/promo_question_background.gif) 170px 2px no-repeat;
+}
+
+#promoApplicationsBottom {
+	margin: 0 7px 12px 10px;
+	height: 2px;
+	background: url(../images/promo_question_background.gif) 2px 0 no-repeat;
+	overflow: hidden;
+}
+html>body #promoApplicationsBottom { /* ie6 filter... ie6 ignores the following rule */
+	overflow: visible;
+}
+
+/* Hides from IE-mac \*/
+* html #promoApplicationsHeader {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+#promoApplicationsBody {
+    background-color: #fff;
+	padding: 10px 0px 8px 6px;
+}
+
+#formApplicationsSelect {
+	float: left;
+	width: 131px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+	padding: 0px;
+	margin: 0 0 10px 0;
+	border: 1px solid #5788B0;
+}
+/* ie5/mac filter \ The preceeding forward-slash in this comment causes ie5/mac to ignore the following rule */
+#formApplicationsSelect {
+	width: 133px;
+}
+
+
+
+
+
+
+
+
+
+
+ul.productLiteratureList {
+	margin: 0;
+	padding: 0;
+	font-size: .63em;
+	line-height: 1.33em;
+}
+
+ul.productLiteratureList li {
+	list-style: none;
+	background-image: url(../images/bulletOrange_lg.gif);
+	background-position: 11px 1em;
+	background-repeat: no-repeat;
+	padding: .5em 75px 1em 29px;
+	margin: 0 0 0 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#publicationsCitationsWrapper {
+	float: left;
+	width: 340px;
+}
+
+ul.publicationsCitationsList {
+	margin: 0;
+	padding: 0;
+	font-size: .63em;
+	line-height: 1.33em;
+}
+
+ul.publicationsCitationsList li {
+	list-style: none;
+	background-image: url(../images/bulletGrey_lg.gif);
+	background-position: 11px 1em;
+	background-repeat: no-repeat;
+	padding: .5em 0 1em 29px;
+	margin: 0 0 0 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#exampleDataWrapper {
+	float: right;
+	width: 160px;
+}
+
+a.buttonOrange, a.buttonOrange:link, a.buttonOrange:visited, a.buttonOrange:active, a.buttonOrange:hover {
+	white-space: nowrap;
+	font-size: 11px;
+	padding: .4em 1.1em .4em 1.1em;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	background-color: #e16f00;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-left:1px solid #a3a3a3;
+	border-top:1px solid #a3a3a3;
+	background-image:url(../images/orangeGrad.jpg);
+	background-repeat:repeat-x;
+}
+
+.buttonWrapper {
+	padding: 14px 0 14px 0;
+}
+/* Hides from IE-mac \*/
+* html .buttonWrapper {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+
+
+
+.prop {
+	width: 1px;
+	float: right;
+}
+
+.contentPropMinHeight {
+/* the bottom border on contentWrapper exists so gecko renders fully vertically with floating elements inside */
+/* the height is really one pixel more (which we then subtract since it exists as the bottom border in contentWrapper) */
+	height: 431px;
+}
+
+
+
+
+.hRule {
+	height: 1px;
+	width: 100%;
+	background-color: #DADADA;
+	overflow: hidden;
+}
+
+
+
+
+
+
+p.hasTitle {
+	font-size: .63em;
+	padding: 0;
+	margin: 0 0 1em 0;
+}
+
+p.tabHeaderText {
+	font-size: .63em;
+	padding: 0;
+	margin: .3em 0 .3em 0;
+}
+
+p.noTabHeaderText {
+    font-size: 0.63em;
+    padding-top: 0pt;
+    padding-right: 60px;
+    padding-bottom: 0pt;
+    padding-left: 0pt;
+    margin-top: 0.3em;
+    margin-right: 0pt;
+    margin-bottom: 1em;
+    margin-left: 0pt;
+}
+
+p.rightFooterLink {
+	font-size: 1.0em;
+	padding: 0;
+	margin: 5px 0 1em 0;
+	text-align: right;
+}
+
+h2.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+    font-size: 1.75em;
+    font-weight: normal;
+    padding-top: 0.48em;
+    padding-right: 0px;
+    padding-bottom: 0.48em;
+    padding-left: 0px;
+    margin-top: 0pt;
+    margin-right: 0pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+}
+
+h5.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #f00;
+	padding: 0px;
+	margin: 0px;
+}
+
+h5.paragraphTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+.instructionsPageTop {
+	padding-right: 250px;
+}
+
+.blackText {
+	color: #000;
+}
+
+.highlighted {
+	background-color: #DAE1FF;
+}
+
+.highlightedDarker {
+	background-color: #DFE6EE;
+}
+
+.highlightedOrange {
+	background-color: #F7BCDC;
+}
+
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+
+.wrapperWidth100Percent {
+	width: 100%;
+}
+
+.nestedFontSize {
+	font-size: 3.63em;
+}
+
+
+.marginRight6 {
+	margin-right: 6px;
+}
+
+.marginLeft6 {
+	margin-left: 60px;
+}
+
+.marginLeft20 {
+	margin-left: 20px;
+}
+
+.marginTop5 {
+	margin-top: 5px;
+}
+
+.marginTop20 {
+	margin-top: 20px;
+}
+
+
+
+.verticalPad20 {
+	height: 20px;
+}
+
+#listSpacer {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+/* LDA additional classes */
+
+#tabHeaderSingleColumn {
+	float: left;
+	width: 747px;
+	padding: 7px 17px 0 17px;
+}
+
+#tabContentWrapperSingleColumnLDA {
+	margin: 0 0 30px 17px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background: url(../images/tab_content_wrapper_background.gif);
+	background-position: 156px 0;
+	background-repeat: repeat-y;
+}
+/* Hides from IE-mac \*/
+* html #tabContentWrapper {height: 1%;}  /* fixes "peekaboo" bug (in this case, the wrapper borders weren't drawing in ie6) */
+/* End hide from IE-mac */
+
+#featureWrapperOrange {
+	background-color: #fff;
+	margin: 0 9px 12px 10px;
+}
+
+#featureBodyOrange {
+	background-color: #fff;
+	font-size: 1.0em;
+	border-right: 1px solid #E38A22;
+	border-bottom: 1px solid #E38A22;
+	border-left: 1px solid #E38A22;
+	padding: 5px 0 8px 0;
+}
+
+#featureHeaderOrange {
+	background-color: #E38A22;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.0em;
+	border-bottom: 1px solid #BD8749;
+	padding: .3em 8px .3em 8px;
+}
+
+.featureItem {
+	padding: 0 4px 0 8px;
+}
+
+
+/* footer home area start */
+#gNav {padding: 0; margin: 0 0 0 8;}
+		.gNavPointer {	font-size: 8px;
+					 	color: #ffffff; 
+					 	margin: 0px 0px 0px 9px; 
+						padding: 0px 0px 0px 0px; 
+					 	/*line-height: 0pt; */ 
+					 	background-color: #cccccc;  
+					 	width: 125px;
+					 	height: 10px;
+					 	vertical-align: text-top;
+					 	}
+		.gNavItem	{font-size: 10px;
+			 		text-decoration: none; 
+			 		position: relative;
+			 		left: 2px; 
+			 		}
+			 		
+		a.gNavItem:link, a.gNavItem:visited, a.gNavItem:active  	{font-size: 10px;
+					 		text-decoration: none; 
+					 		position: relative;
+					 		left: 2px;
+					 		/* color:#DE8E12; */
+					 		/* color: #E38A22; */
+						}
+			 		
+		a.gNavItem:hover  	{font-size: 10px;
+					 		/* text-decoration: none; */
+					 		text-decoration: underline;
+					 		position: relative;
+					 		left: 2px;
+					 		/* color:#DE8E12; */
+					 		color: #E38A22;
+						}
+	 		
+		
+		.gNavItemA	{font-size: 10px;
+			 		font-weight: bold; 
+			 		color: #ffffff; 
+			 		text-decoration: none; 
+			 		position: relative;
+			 		left: 13px; 
+			 		top: -10px;  
+			 		margin: 0px 0px 0px 0px; 
+					padding: 0px 0px 0px 0px; 
+			 		width: 130px;
+			 		background-color: #eeeeee;
+			 		}
+		.gNavFooterColA
+					{
+						border-right : 1px solid #B7C7DE;
+					}
+		.gNavFooterColB
+					{
+						border-left: 1px solid #B7C7DE;
+						border-right : 1px solid #B7C7DE;						
+					}				
+		
+		.gNavSpcr	{
+					width: 140px;
+					height: 3px;
+			 		}
+		.gNavHeader {	font-size: 11px; 
+						color: #b8c6d9; 
+						text-decoration: none; 
+						padding: 0; margin: 8 6 8 1; 
+						position: relative; 
+						font-weight: bold;
+						}
+		a.gNavWWlinks {	color: #FFF; 
+						font-family: Verdana,Arial,Helvetica; 
+						font-size: 10px; 
+						text-decoration: none;
+						margin: 0px 8px 0px 8px;
+						}
+		.gNavWWlinks {	color: #FFF; 
+						font-family: Verdana,Arial,Helvetica; 
+						font-size: 10px; 
+						text-decoration: none;
+						margin: 0px 0px 0px 0px;
+						}
+		.isciencelink {color: #448424;}
+/* footer home area end */
+
+/* content-level containers */
+
+.parentContainer {
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.childContainer {
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+}
+
+.siteMapCategory {
+	background-color: #F0F1F5;
+}
+
+.siteMapHeader {
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.siteMapSubHeader {
+	color: #325F99;
+	font-weight: bold;
+}
+
+td.siteMapCategory p {
+	margin-left: 5px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	padding: 0px;
+}
+
+.info-heading {
+	color:#333333; 
+	font: bold 12px/12px Arial, Helvetica; 
+	margin: 0px 0px 5px 0px; 
+	padding: 0px;
+}
+
+td.productColumn {
+	background-image: none;
+}
+
+td.productColumn td.brownTabTop p {
+	padding: 0px 6px 2px 14px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 4px;
+}
+
+td.greenTabTop p {
+	padding: 0px 6px 2px 14px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 4px;
+	width: 380px;
+}
+
+td.productColumn p {
+	padding: 0px 6px 2px 14px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 4px;
+	width: 180px;
+}
+
+
+
+/* WS1 */
+
+#loggedInWrapper {
+	font-size: 11px;
+	line-height: normal;
+	padding: 4px 0px 0px 7px;
+	margin: 0px 0px 0px 0px;
+}
+
+#loggedInWrapper a {
+	font-size: 10px;
+}
+
+.imageWrapper {
+	line-height: 0;
+}
+
+.marginBottom5 {
+	margin-bottom: 5px;
+}
+
+.margin10x0 {
+	color: #666;
+	font-weight: normal;
+	margin: 10px 0 10px 0;
+}
+
+A.button2 {padding: 1px 4px; font: bold 11px/11px Arial,Helvetica,sans-serif;}
+A:link.button2 , A:visited.button2 {padding: 1px 4px; background: #728bab; border: 1px solid #b8c6d9; border-right: #336699; border-bottom: #336699; color: #f0f2f5; color: #f0f2f5; text-decoration: none;}
+A:hover.button2, A:active.button2 {padding: 1px 4px; background: #b8c6d9; border: 1px solid #f0f2f5; border-right: #728bab; border-bottom: #728bab; color: #ffffff; text-decoration: none;}
+
+.style3 {font-size: 11px}
+.style6 {font-size: 12px; font-weight: bold; color: #FFFFFF; }
+
+.formTable454Wrapper {
+    background-color: #DAE1FF;
+    border: 1px solid #C3C3C3;
+    width: 452px;
+}
+
+table.formTable454 {
+	width: 100%;
+}
+
+table.formTable454 th {
+	background-color: #728BAB;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #C3C3C3;
+	height: 21px;
+	padding-left: 8px;
+}
+
+table.formTable454 td {
+	vertical-align: middle;
+	height: 30px;
+	font-size: 11px;
+}
+
+table.formTable454 td.shortCell {
+	vertical-align: middle;
+	height: 20px;
+}
+
+table.formTable454 td.left {
+	width: 187px;
+	padding-left: 8px;
+}
+
+table.formTable454 td.leftShort {
+	width: 80px;
+	padding-left: 8px;
+}
+
+
+table.formTable454 td.leftWide {
+	width: 260px;
+	padding-left: 8px;
+}
+
+
+table.formTable454 td.wide218 {
+	width: 218px;
+	padding-left: 8px;
+}
+
+table.formTable454 td.wide178 {
+	width: 178px;
+	padding-left: 25px;
+}
+
+table.formTable454 td.alignVerticalTop {
+	vertical-align: top;
+}
+
+table.formTable454 td.storeLoginCellright {
+	width: 364px;
+	text-align: right;
+	padding-right: 155px;
+}
+
+.storeLoginCellright2 {
+    text-align: right;
+    padding-right: 100px;
+}
+
+table.formTable454 td.reminderDescr {
+	width: 180px;
+	padding-left: 8px;
+}
+
+table.formTable454 td.storeLoginButtonCell {
+	/*width: 364px;*/
+	padding-right: 155px;
+}
+
+.forgetPasswordCell {
+    vertical-align: middle;
+    text-align: right;
+    padding-left: 69px;
+    padding-right: 15px;
+}
+
+.formCellInputField {
+	width: 227px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333;
+	background-color: #fff;
+	padding: 3px 4px 3px 4px;
+	margin: 0px;
+	border-width: 1px;
+	border-color: #ccc #999 #999 #ccc;
+	border-style: inset;
+	vertical-align: middle;
+}
+
+
+table.formTable454 td.subHeadCell {
+	vertical-align: bottom;
+	padding-top: 15px;
+}
+
+.textField {
+    width: 300px;
+}
+
+.discriptionField {
+    width: 300px;
+    height: 150px;
+}
+
+.flash_cell {
+    padding-top: 0px;
+}
+
+.labelLink {
+    color: #016599;
+}
+
+
+
+/* end content-level containers */
+
+/* SUB MENU */
+#subheader_menu1 {
+	background: #F0F0F0 url(../images/subhead.jpg) no-repeat;
+	border-bottom: 1px solid #A3A3A3;
+	border-right: 1px solid #A3A3A3;
+	padding: 11px 10px 2px 15px;
+	height: 31px;
+	z-index: 1;
+}
+
+
+#subheader_menu1 div.subleft {
+	color: #003366;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#subheader_menu1 div.subleft a {
+	font-weight: bold;
+}
+
+#subheader_menu1 div.subright {
+	color: #003366;
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-top: -5px;
+	width: 400px;
+}
+
+html>body #subheader_menu1 div.subright {margin-top: -5px;}
+
+.emptyBlock {
+    /*height: 1800px;*/
+}
+
+.searchTextBoxHeader {
+	border: 1px solid #5788B0;
+	color: #003366;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	width: 186px;
+	padding: 2px;
+	float: left;
+	margin-right: 5px;
+}
+

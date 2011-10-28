@@ -1,0 +1,283 @@
+/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Header
+IE 7 Styles [header-ie7.css]
+
+David Munger [david.munger@acquitygroup.com]
+11/27/2009
+
+Copyright (c) 2009 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#headWrapper #header {
+	position: relative;
+	z-index: 4000;
+}
+
+#global-nav {
+	position: relative;
+	z-index: 5000;
+}
+
+#global-search {
+	z-index: 7000;
+}
+
+#my-account {
+	line-height: normal;
+	z-index: 7000;
+}/*
+--------------------------------------------------
+
+Applied Bio Firefly
+Standalone Footer
+
+IE7 Styles [footer-ie7.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+03/15/2010
+
+Copyright (c) 2010 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#footer {
+	padding-top: 14px;
+}
+
+#footer #footer-wrapper {
+	background-image: url(../images/footer/bg-footer-wrapper-ie7.png);
+}
+
+#footer .hr {
+	margin-bottom: 2px;
+	padding-top: 28px;
+}
+
+#footer #legal-info ul li {
+	background-position: 0 2px;
+	margin-left: 5px;
+}
+
+#footer #life-technologies #follow-us {
+	margin-bottom: 6px;
+}
+
+#footer .see-more {
+	background-position: 100% 3px;
+}
+
+.modal a.jqmClose {
+	margin-right: 0;
+}/*
+--------------------------------------------------
+
+Applied Bio Firefly
+IE 7 Styles [global.css]
+
+Lee Allen [lee.allen@acquitygroup.com]
+10/27/2009
+
+Copyright (c) 2009 Acquity Group LLC
+
+--------------------------------------------------
+*/
+
+#content {
+	width: 970px;
+}
+
+#footer #applied-biosystems-footer ul li {
+	line-height: 13px;
+}
+
+#my-account > ul li.my-account {
+	right: 0;
+}
+
+#my-account > ul li.last {
+	margin-top: -1px;
+}
+
+#page-tools ul li.e-mail .drop-down {
+	margin-right: -1px;
+	right: 1px;
+}
+
+.services-3-column {
+	background-position: 0 93px;
+}
+
+.services-3-column ul.collapsible.comps li ul.comps {
+	margin-left: 16px;
+}
+
+#event-widget h3 {
+	margin-bottom: 3px;
+}
+
+#popular-solutions h3 {
+	margin-bottom: 5px;
+}
+
+#contact-us-widget {
+	padding-top: 12px;
+}
+
+#tac-widget {
+	background-position: 6px 7px;
+}
+
+#tac-widget p {
+	padding-top: 10px;
+}
+
+/* @group Common 2-Column */
+.common-2-column {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.common-2-column-icon h2 {   
+    top: 12px;  
+}
+
+.common-2-column ul.comps li ul.comps li {
+    margin-left: 1px;
+}
+/* @end Common 2-Column */
+
+/* @group Common 3-Column */
+.services-3-column .business-2-business ul.comps li {
+    margin-left: 1px;
+}
+/* @end Common 3-Column */
+
+/* @group Search */
+.G-H #main-content ul {
+    padding-left: 10px;
+    margin-left: 40px;
+}
+
+.G-H #main-content ul li {
+    margin-left: 5px;
+}
+/* @end Search */
+
+.modal a.jqmClose {
+	margin-right: 0;
+}
+
+.thumbnail-listing {
+	margin-bottom: 9px;	
+}
+
+.thumbnail-listing h2 {
+	margin-bottom: 10px;
+}
+
+.workflow-step,
+.workflow-step dl.solution-item {
+	/*position: relative;*/
+}
+
+#support select {
+	width: 358px;
+	margin-bottom: 7px;
+}
+
+#support .column-2 select {
+	width: 345px;
+}
+
+#support p.care {
+	padding-top: 0;
+}
+
+#support-nav li {
+	border-top: none;
+}
+
+#search-again legend {
+	left: -7px;
+	position: relative;
+}
+
+.result-set .result-label {
+	margin-bottom: 0;
+	padding-bottom: 13px;
+}
+
+.result-set .results {   
+    width: 695px;
+}
+
+#new-search form legend {
+	left: -7px;
+	position: relative;
+}
+
+#new-search div.column-1 label {
+	height: 15px;
+}
+
+/* @group left-column */
+.left-column .common-2-column {
+    margin-left: -6px;
+}
+
+.left-column .tabs {
+    margin-left: 1px;
+}
+
+.left-column #intro,
+.left-column #hero {
+    margin-left: -5px;
+}
+/* @end left-column */
+
+.homepage #solutions h2 {
+	margin-bottom: -3px;
+}
+
+.media-list-horz {
+	height: 130px;
+}
+
+/* Fix for issue 14593 - Day toolbars not stacking correctly */
+table {
+	position: relative;
+	z-index: 1;
+}
+
+/* Fix for issue 14812 - workflow tab cufon text position 
+div.workflow-step h3 {
+	position: relative;
+}
+
+#tab-workflow dl {
+	float: none;
+}*/
+
+.tabs-nav {
+	height: 29px;
+}
+#training-widget p.training-reg {
+	margin-bottom: 0px;
+}
+#training-widget .train ul, #financing-widget .fin ul, #tac-widget .tac ul {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}.list-of-links-widget {
+	padding-top: 12px;
+}
+
+.list-of-links-widget ul.comps li.generic {
+margin-left:18px;
+padding-left:2px;
+}

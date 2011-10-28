@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.appbio.bo">
+
+    <class name="ProductItem" table="products" mutable="true">
+        <id name="catalogNumber" column="CATALOG_NUMBER" type="long">
+            <generator class="assigned"/>
+        </id>
+        
+        <property name="parentId" column="PARENT_ID" type="long"/>
+        <property name="productName" column="PRODUCT_NAME" type="string"/>
+        <property name="group" column="IS_GROUP" type="org.hibernate.type.YesNoType"/>
+        <property name="description" column="PRODUCT_DESCRIPTION" type="string"/>
+<!--
+        <set name="subProducts" lazy="true">
+            <key column="PARENT_ID"/>
+            <one-to-many class="com.appbio.bo.ProductItem"/>
+        </set>
+-->
+    </class>
+
+</hibernate-mapping>

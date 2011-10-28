@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<project name="applera" basedir="." default="install">
+    <property file="build.properties"/>
+
+    <property name="src.dir" value="src"/>
+    <property name="conf.dir" value="conf"/>
+    <property name="content.dir" value="content"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="web.dir" value="${deploy.path}/${application.name}"/>
+    <property name="compile.dir" value="${build.dir}/classes"/>
+    <!--<property name="name" value="springapp"/>-->
+
+    <path id="compile.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean" description="deletes all compiles files">
+        <delete dir="${build.dir}"/>
+        <delete dir="${deploy.path}/${application.name}"/>
+    </target>
+
+    
+    <target name="compile" description="compiles all sources">
+        <mkdir dir="${build.dir}/classes"/>
+        <javac destdir="${build.dir}/classes" target="1.5" debug="true"
+               deprecation="true" optimize="true" failonerror="true">
+            <src path="${src.dir}/java"/>
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+
+
+    <target name="deploy" depends="compile" description="Deploy application">
+        <mkdir dir="${deploy.path}/${application.name}/WEB-INF"/>
+        <mkdir dir="${deploy.path}/${application.name}/WEB-INF/jsp"/>
+        <mkdir dir="${deploy.path}/${application.name}/WEB-INF/classes"/>
+        <mkdir dir="${deploy.path}/${application.name}/WEB-INF/lib"/>
+        <copy todir="${deploy.path}/${application.name}/WEB-INF/classes" preservelastmodified="true">
+            <fileset dir="${build.dir}/classes">
+                <include name="**/*.*"/>
+            </fileset>
+            <fileset dir="${conf.dir}/logging">
+                <include name="**/*.*"/>
+            </fileset>
+            <fileset dir="${conf.dir}/default">
+                <include name="Portal*.properties"/>
+            </fileset>
+            <fileset dir="${src.dir}/java">
+                <include name="**/*.hbm.xml"/>
+            </fileset>
+        </copy>
+        <copy todir="${deploy.path}/${application.name}/jsp" preservelastmodified="true">
+            <fileset dir="${src.dir}/jsp">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${deploy.path}/${application.name}/css" preservelastmodified="true">
+            <fileset dir="${content.dir}/css">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${deploy.path}/${application.name}/images" preservelastmodified="true">
+            <fileset dir="${content.dir}/images">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${deploy.path}/${application.name}/js" preservelastmodified="true">
+            <fileset dir="${content.dir}/js">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${deploy.path}/${application.name}/flash" preservelastmodified="true">
+            <fileset dir="${content.dir}/flash">
+                <include name="**/*.*"/>
+                <exclude name="HomePage-NA.txt"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${deploy.path}/${application.name}/abshared-static" preservelastmodified="true">
+            <fileset dir="${content.dir}/abshared-static">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+
+        <copy file="${content.dir}/flash/HomePage-NA.txt" todir="${deploy.path}/${application.name}"/>
+
+
+        <copy todir="${deploy.path}/${application.name}/WEB-INF" preservelastmodified="true">
+            <fileset dir="${conf.dir}/default">
+                <include name="**/*.*"/>
+                <exclude name="Portal*.properties"/>
+            </fileset>
+
+            <fileset dir="${conf.dir}/services">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${deploy.path}/${application.name}/WEB-INF/lib" preservelastmodified="true">
+            <fileset dir="${lib.dir}">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+    </target>
+
+    <target name="install" depends="deploy"/>
+
+<!--
+    <target name="deploywar" depends="build" description="Deploy application as a WAR file">
+        <war destfile="${name}.war"
+             webxml="${web.dir}/WEB-INF/web.xml">
+            <fileset dir="${web.dir}">
+                <include name="**/*.*"/>
+            </fileset>
+        </war>
+        <copy todir="${deploy.path}" preservelastmodified="true">
+            <fileset dir=".">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+-->
+</project>

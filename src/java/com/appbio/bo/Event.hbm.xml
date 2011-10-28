@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.appbio.bo">
+
+    <class name="Event" table="events" mutable="true">
+        <id name="id" column="ID" type="integer">
+            <generator class="increment"/>
+        </id>
+
+        <property name="eventName" column="EVENT_NAME" type="string"/>
+        <property name="eventUrl" column="EVENT_URL" type="string"/>
+        <property name="organizerEmail" column="ORGANIZER_EMAIL" type="string"/>
+        <property name="description" column="DESCRIPTION" type="string"/>
+        <property name="location" column="LOCATION" type="string"/>
+        <property name="booth" column="BOOTH" type="string"/>
+        <property name="startDate" column="START_DATE" type="localDate"/>
+        <property name="endDate" column="END_DATE" type="localDate"/>
+        <property name="agendaUrl" column="AGENDA_URL" type="string"/>
+        <bag name="workDays" lazy="false" inverse="false" fetch="subselect" cascade="all">
+            <key column="EVENT_ID" not-null="true"/>
+            <one-to-many class="WorkDay"/>
+        </bag>
+    </class>
+
+</hibernate-mapping>

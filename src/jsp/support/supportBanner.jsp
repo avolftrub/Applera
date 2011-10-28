@@ -1,0 +1,1 @@
+<a href="http://marketing.appliedbiosystems.com/mk/submit/GLOBAL_SERVICES_EU_ARD?_JS=T&rd=d"><img src="images/globalservices_catalog.jpg" border="0" alt=""></a>

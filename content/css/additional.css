@@ -1,0 +1,66 @@
+<!--
+td.nonFlashLinks {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #5b5b5b;
+	font-weight: bold;
+padding: 5px 0px 5px 15px;
+}
+
+td.headerRow
+{
+	border-color: #999;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+}
+
+td.headerRow2
+{
+	border-color: #e16f00;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+}
+
+td.headerRow3
+{
+	border-color: #279024;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+}
+
+td.headerRow4
+{
+	border-color: #003366;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+}
+table.nonFlash
+{
+	width: 349px;
+	height: 186px;
+	background-image: url(images/dna.gif);
+	border-color: #999;
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+}
+a.specialOfferLink, a.specialOfferLink:visited, a.specialOfferLink:active, a.specialOfferLink:link, specialOfferLink:hover
+{
+	color: #e16f00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.newSiteLink, a.newSiteLink:visited, a.newSiteLink:active, a.newSiteLink:link, newSiteLink:hover
+{
+	color: #279024;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.learningLink, a.learningLink:visited, a.learningLink:active, a.learningLink:link, learningLink:hover
+{
+	color: #003366;
+	text-decoration: none;
+	font-weight: bold;
+}
+-->
+

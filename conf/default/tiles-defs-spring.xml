@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+        "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+    <definition name="main1" path="/jsp/common/mainLayout1.jsp">
+        <put name="reportTitleKey" value="common.report.pageTitle"/>
+        <put name="title" value="/jsp/common/title.jsp" direct="false"/>
+        <put name="header" value="/jsp/common/header1.jsp" direct="false"/>
+        <put name="footer" value="/jsp/common/footer1.jsp" direct="false"/>
+        <put name="pageUri" value="needs to be filled" type="string"/>
+        <!-- Unfortunately, navigation attribute must be a string -->
+        <put name="navigation" value="" type="string"/>
+        <!-- Specify it, for example, as reportHeader.jsp or bodyHeader.jsp -->
+        <put name="bodyHeader" value="empty.jsp" type="string"/>
+        <put name="body" value="empty.jsp" type="string"/>
+        <put name="pageCaption" value="empty.jsp" type="string"/>
+        <putList name="leftPanel"/>
+        <putList name="rightPanel"/>
+        <putList name="scripts"/>
+        <putList name="startupScripts"/>
+        <putList name="dynamicScripts"/>
+    </definition>
+
+    <!-- Default root definition -->
+    <definition name="main" path="/jsp/common/mainLayout1.jsp">
+        <put name="reportTitleKey" value="common.report.pageTitle"/>
+        <put name="title" value="/jsp/common/title.jsp" direct="false"/>
+        <put name="header" value="/jsp/common/header1.jsp" direct="false"/>
+        <put name="footer" value="/jsp/common/footer1.jsp" direct="false"/>
+        <put name="pageUri" value="needs to be filled" type="string"/>
+        <!-- Unfortunately, navigation attribute must be a string -->
+        <put name="navigation" value="" type="string"/>
+        <!-- Specify it, for example, as reportHeader.jsp or bodyHeader.jsp -->
+        <put name="bodyHeader" value="empty.jsp" type="string"/>
+        <put name="body" value="empty.jsp" type="string"/>
+        <put name="pageCaption" value="empty.jsp" type="string"/>
+        <putList name="leftPanel"/>
+        <putList name="rightPanel"/>
+        <putList name="scripts"/>
+        <putList name="startupScripts"/>
+        <putList name="dynamicScripts"/>
+    </definition>
+
+<!--
+    <definition name="/index.do" extends="main">
+        <put name="pageCaption" value="home" type="string"/>
+        <put name="pageUri" value="index.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+            <add value="js/flashHelper.js"/>
+        </putList>
+        <putList name="dynamicScripts">
+            <add value="/jsp/common/dynamicJS.jsp"/>
+        </putList>
+    </definition>
+-->
+
+    <definition name="/index.do" extends="main">
+        <put name="body" value="/jsp/common/banners1.jsp" type="string"/>
+        <put name="pageCaption" value="Applied Biosystems Russia" type="string"/>
+        <put name="pageUri" value="index.do" type="string"/>
+    </definition>
+    <!--<definition name="/index.do" path="/jsp/common/home.jsp"/>-->
+    <definition name="/index1.do" path="/jsp/common/home_new.jsp"/>
+
+    <definition name="/new_index.do" extends="main1">
+        <put name="body" value="/jsp/common/banners.jsp" type="string"/>
+        <put name="pageCaption" value="Applied Biosystems Russia" type="string"/>
+        <put name="pageUri" value="index.do" type="string"/>
+
+    </definition>
+
+
+    <definition name="/support.do" extends="main">
+        <put name="body" value="/jsp/support/supportMain.jsp" type="string"/>
+        <put name="pageCaption" value="support" type="string"/>
+        <put name="supportMenu" value="/jsp/support/supportMenu.jsp" type="string"/>
+        <put name="supportRight" value="/jsp/support/supportRight.jsp" type="string"/>
+        <put name="pageUri" value="support.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/new_support.do" extends="main1">
+        <put name="body" value="/jsp/support/supportMain.jsp" type="string"/>
+        <put name="pageCaption" value="support" type="string"/>
+        <put name="supportMenu" value="/jsp/support/supportMenu.jsp" type="string"/>
+        <put name="supportRight" value="/jsp/support/supportRight.jsp" type="string"/>
+        <put name="pageUri" value="support.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/apptech.do" extends="main">
+        <put name="body" value="/jsp/apptech/apptech.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="pageUri" value="apptech.do" type="string"/>
+    </definition>
+
+
+    <definition name="/about.do" extends="main">
+        <put name="body" value="/jsp/about/aboutMain.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="pageUri" value="about.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/new_about.do" extends="main1">
+        <put name="body" value="/jsp/about/aboutMain.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="pageUri" value="about.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="/contact.do" extends="main">
+        <put name="body" value="/jsp/about/contact.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="selected" value="contact" type="string"/>
+        <put name="pageUri" value="contact.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/new_contact.do" extends="main1">
+        <put name="body" value="/jsp/about/contact.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="selected" value="contact" type="string"/>
+        <put name="pageUri" value="contact.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="/corp_structure.do" extends="main">
+        <put name="body" value="/jsp/about/corpStructure.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="selected" value="corp_structure" type="string"/>
+        <put name="pageUri" value="corp_structure.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/new_corp_structure.do" extends="main1">
+        <put name="body" value="/jsp/about/corpStructure.jsp" type="string"/>
+        <put name="pageCaption" value="about" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="selected" value="corp_structure" type="string"/>
+        <put name="pageUri" value="corp_structure.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="productsList" extends="main">
+        <put name="body" value="/jsp/products/productsMain.jsp" type="string"/>
+        <put name="pageCaption" value="products" type="string"/>
+        <put name="productsMenu" value="/jsp/products/productsMenu.jsp" type="string"/>
+        <put name="rightPanel" value="/jsp/products/rightPanel.jsp" type="string"/>
+        <put name="breadCrumbs" value="/jsp/products/breadCrums.jsp" type="string"/>
+        <put name="rightFrame" value="/jsp/support/supportRight.jsp" type="string"/>
+        <put name="pageUri" value="products.do" type="string"/>
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="productsList_new" extends="main1">
+        <put name="body" value="/jsp/products/productsMain.jsp" type="string"/>
+        <put name="pageCaption" value="products" type="string"/>
+        <put name="productsMenu" value="/jsp/products/productsMenu.jsp" type="string"/>
+        <put name="rightPanel" value="/jsp/products/rightPanel.jsp" type="string"/>
+        <put name="breadCrumbs" value="/jsp/products/breadCrums.jsp" type="string"/>
+        <put name="rightFrame" value="/jsp/support/supportRight.jsp" type="string"/>
+        <put name="pageUri" value="products.do" type="string"/>
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="applicationsList" extends="main">
+        <put name="body" value="/jsp/applications/applicationsMain.jsp" type="string"/>
+        <put name="applicationsMenu" value="/jsp/applications/applicationsMenu.jsp" type="string"/>
+        <put name="pageUri" value="applications.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="printPreview" path="/jsp/products/printPreview.jsp"/>
+
+    <definition name="addNewProductForm" extends="main">
+        <put name="body" value="/jsp/products/addNewProduct.jsp" type="string"/>
+        <put name="pageCaption" value="Добавление продукта в каталог" type="string"/>
+        <putList name="leftPanel">
+            <add value="/jsp/support/supportMenu.jsp"/>
+        </putList>
+        <putList name="rightPanel">
+            <add value="/jsp/support/supportContact.jsp"/>
+            <add value="/jsp/support/supportBanner.jsp"/>
+        </putList>
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="loginForm" extends="main">
+        <put name="body" value="/jsp/common/login.jsp" type="string"/>
+        <put name="pageCaption" value="Login Page" type="string"/>
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/administration.do" extends="main">
+        <put name="body" value="/jsp/admin/mng_users.jsp" type="string"/>
+        <put name="pageCaption" value="administration" type="string"/>
+        <put name="adminMenu" value="/jsp/admin/adminMenu.jsp" type="string"/>
+        <put name="pageUri" value="mng_users.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="manageUsers" extends="main">
+        <put name="body" value="/jsp/admin/mng_users.jsp" type="string"/>
+        <put name="pageCaption" value="mng_users" type="string"/>
+        <put name="adminMenu" value="/jsp/admin/adminMenu.jsp" type="string"/>
+        <put name="selected" value="mng_users" type="string"/>
+        <put name="pageUri" value="mng_users.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="userEdit" extends="main">
+        <put name="body" value="/jsp/admin/editUser.jsp" type="string"/>
+        <put name="pageCaption" value="EditUser" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="/mng_applications.do" extends="main">
+        <put name="body" value="/jsp/admin/mng_applications.jsp" type="string"/>
+        <put name="pageCaption" value="mng_users" type="string"/>
+        <put name="aboutMenu" value="/jsp/admin/adminMenu.jsp" type="string"/>
+        <put name="selected" value="mng_applications" type="string"/>
+        <put name="pageUri" value="mng_applications.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="/mng_lib.do" extends="main">
+        <put name="body" value="/jsp/admin/mng_lib.jsp" type="string"/>
+        <put name="pageCaption" value="mng_lib" type="string"/>
+        <put name="aboutMenu" value="/jsp/admin/adminMenu.jsp" type="string"/>
+        <put name="selected" value="mng_lib" type="string"/>
+        <put name="pageUri" value="mng_lib.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="events" extends="main">
+        <put name="body" value="/jsp/events/eventsMain.jsp" type="string"/>
+        <put name="pageCaption" value="events" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="pageUri" value="events.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="events_new" extends="main1">
+        <put name="body" value="/jsp/events/eventsMain.jsp" type="string"/>
+        <put name="pageCaption" value="events" type="string"/>
+        <put name="aboutMenu" value="/jsp/about/aboutMenu.jsp" type="string"/>
+        <put name="pageUri" value="events.do" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="eventEdit" extends="main">
+        <put name="body" value="/jsp/events/eventEdit.jsp" type="string"/>
+        <put name="pageCaption" value="EditEvent" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="eventRegister" extends="main">
+        <put name="body" value="/jsp/events/eventSubscribe.jsp" type="string"/>
+        <put name="pageCaption" value="EditEvent" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="eventSubscribeOk" extends="main">
+        <put name="body" value="/jsp/events/eventSubscribeOk.jsp" type="string"/>
+        <put name="pageCaption" value="EditEvent" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+                                         
+    <definition name="forgetPassword" extends="main">
+        <put name="body" value="/jsp/common/forgetPassword.jsp" type="string"/>
+        <put name="pageCaption" value="EditEvent" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="passwordChanged" extends="main">
+        <put name="body" value="/jsp/common/passwordChanged.jsp" type="string"/>
+        <put name="pageCaption" value="EditEvent" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+    <definition name="pageNotFound" extends="main">
+        <put name="body" value="/jsp/common/missingResourse.jsp" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+    <definition name="errorPage" extends="main">
+        <put name="body" value="/jsp/common/errorPage.jsp" type="string"/>
+
+        <putList name="scripts">
+            <add value="js/processSearch.js"/>
+            <add value="js/rollovers_int.js"/>
+        </putList>
+    </definition>
+
+
+</tiles-definitions>
