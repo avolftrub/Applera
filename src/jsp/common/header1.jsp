@@ -102,8 +102,7 @@ The value is changed to match the text of the item they chose
 								<h5><spring:message code="header.menu.tag.production"/>:</h5>
 								<ul>
 									<li><a href="http://www5.appliedbiosystems.com/tools/sirna/"><spring:message code="header.menu.tag.production.siRNAs"/></a></li>
-									<li><a href="https://products.appliedbiosystems.com/ab/en/US/direct/ab?cmd=catNavigate2&catID=601274">Custom TaqMan&reg; Array</a></li>
-
+                                    <li><a href="https://products.appliedbiosystems.com/ab/en/US/direct/ab?cmd=catNavigate2&catID=601274">Custom TaqMan&reg; Array</a></li>
 
                                     <li><a href="http://bioinfo.appliedbiosystems.com/genomic-products/gene-expression.html">TaqMan&reg; Gene Expression Assays</a></li>
                                     <%--<c:choose>--%>
@@ -114,9 +113,9 @@ The value is changed to match the text of the item they chose
                                             <%--<li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=ABGEKeywordSearch&catID=600689">TaqMan&reg; Gene Expression Assays</a></li>--%>
                                         <%--</c:otherwise>--%>
                                     <%--</c:choose>--%>
-                                    <li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=601803"><spring:message code="header.menu.micro.rnk"/></a></li>
-                                    <li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=ABCNVKeywordSearch&catID=606182" target="_blank"><spring:message code="header.menu.tag.production.copy.number.assays"/></a></li>
-									<li><a href="https://products.appliedbiosystems.com/ab/en/US/direct/ab?cmd=ABGTKeywordSearch&catID=600769">TaqMan&reg; <acronym title="Single-Nucleotide Polymorphism">SNP</acronym> Genotyping Assays</a></li>
+                                    <li><a href="https://bioinfo.appliedbiosystems.com/genome-database/mirna.html"><spring:message code="header.menu.micro.rnk"/></a></li>
+                                    <li><a href="https://bioinfo.appliedbiosystems.com/genome-database/copy-number-variation.html" target="_blank"><spring:message code="header.menu.tag.production.copy.number.assays"/></a></li>
+									<li><a href="https://bioinfo.appliedbiosystems.com/genome-database/snp-genotyping.html">TaqMan&reg; <acronym title="Single-Nucleotide Polymorphism">SNP</acronym> Genotyping Assays</a></li>
 								</ul>
 							</div>
 							<!-- / .column-2 -->
