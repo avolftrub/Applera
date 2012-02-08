@@ -101,7 +101,7 @@ The value is changed to match the text of the item they chose
 								</ul>
 								<h5><spring:message code="header.menu.tag.production"/>:</h5>
 								<ul>
-									<li><a href="http://www5.appliedbiosystems.com/tools/sirna/"><spring:message code="header.menu.tag.production.siRNAs"/></a></li>
+									<li><a href="https://bioinfo.appliedbiosystems.com/genome-database/sirna.html"><spring:message code="header.menu.tag.production.siRNAs"/></a></li>
                                     <li><a href="https://products.appliedbiosystems.com/ab/en/US/direct/ab?cmd=catNavigate2&catID=601274">Custom TaqMan&reg; Array</a></li>
 
                                     <li><a href="http://bioinfo.appliedbiosystems.com/genomic-products/gene-expression.html">TaqMan&reg; Gene Expression Assays</a></li>
