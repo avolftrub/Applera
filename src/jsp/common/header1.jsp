@@ -87,7 +87,7 @@ The value is changed to match the text of the item they chose
 									<li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=607002">Очистка и анализ фармацевтических препаратов</a></li>
 									<li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=607001">Изучение белков</a></li>
 									<li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=601246"><spring:message code="header.menu.realtime.prc"/></a></li>
-                                    <li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=608161">Секвенирование с применением технологии полупроводников</a></li>
+                                    <li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=608161">Ion Semiconductor Sequencing</a></li>
 									<li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=604433">Сервис</a></li>
 									<li><a href="https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&catID=607003">киРНК, миРНК и некодирующие РНК</a></li>
 								</ul>
@@ -159,7 +159,7 @@ The value is changed to match the text of the item they chose
 									<li><a href="http://www.appliedbiosystems.com/absite/us/en/home/applications-technologies/flow-cytometry.html" title="" target="_blank">Лазерная захватывающая микродиссекция</a></li>
                                     <li><a href="http://www.appliedbiosystems.com/absite/us/en/home/applications-technologies/pcr.html" title="" target="_blank"><spring:message code="header.menu.technologies.pcr"/></a></li>
                                     <li><a href="http://www.appliedbiosystems.com/absite/us/en/home/applications-technologies/real-time-pcr.html" title="" target="_blank"><spring:message code="header.menu.technologies.realtime.pcr"/></a></li>
-                                    <li><a href="http://www.appliedbiosystems.com/absite/us/en/home/applications-technologies/semiconductor-sequencing.html" title="" target="_blank">Секвенирование с применением технологии полупроводников</a></li>
+                                    <li><a href="http://www.appliedbiosystems.com/absite/us/en/home/applications-technologies/semiconductor-sequencing.html" title="" target="_blank">Ion Semiconductor Sequencing</a></li>
                                     <li><a href="http://www.appliedbiosystems.com/absite/us/en/home/applications-technologies/solid-next-generation-sequencing.html" title="" target="_blank"><spring:message code="header.menu.technologies.dna.legitation"/></a></li>
 								</ul>
 							</div>
